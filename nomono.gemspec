@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.name = "nomono"
   spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/nomono/version.rb", mod) }::Nomono::Version::VERSION
   spec.authors = ["Peter H. Boling"]
-  spec.email = ["floss@glatzo.com"]
+  spec.email = ["floss@galtzo.com"]
 
   spec.summary = "1️⃣ ENV-driven Gemfile macros for sibling gem path resolution"
   spec.description = "1️⃣ Provides nomono_gems and eval_nomono_gems to standardize local multi-repo dependency wiring in Gemfiles."
