@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "1️⃣ ENV-driven Gemfile macros for sibling gem path resolution"
   spec.description = "1️⃣ Provides nomono_gems and eval_nomono_gems to standardize local multi-repo dependency wiring in Gemfiles."
-  spec.homepage = "https://github.com/kettle-rb/nomono"
+  spec.homepage = "https://github.com/kettle-dev/nomono"
   spec.licenses = ["AGPL-3.0-only"]
   spec.required_ruby_version = ">= 3.2.0"
 

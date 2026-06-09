@@ -12,9 +12,9 @@ authors:
     orcid: 'https://orcid.org/0009-0008-8519-441X'
 identifiers:
   - type: url
-    value: 'https://github.com/kettle-rb/nomono'
+    value: 'https://github.com/kettle-dev/nomono'
     description: "nomono"
-repository-code: 'https://github.com/kettle-rb/nomono'
+repository-code: 'https://github.com/kettle-dev/nomono'
 abstract: >-
   nomono
 license: See license file

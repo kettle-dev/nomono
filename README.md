@@ -72,7 +72,7 @@ not practical for the current toolchain.
 
 </details>
 
-[gh-discussions]: https://github.com/kettle-rb/nomono/discussions
+[gh-discussions]: https://github.com/kettle-dev/nomono/discussions
 
 ### Enterprise Support [![Tidelift](https://tidelift.com/badges/package/rubygems/nomono)](https://tidelift.com/subscription/pkg/rubygems-nomono?utm_source=rubygems-nomono&utm_medium=referral&utm_campaign=readme)
 
@@ -208,7 +208,7 @@ chat rooms and mailing lists agrees to follow the [![Contributor Covenant 2.1][�
 
 Made with [contributors-img][🖐contrib-rocks].
 
-Also see GitLab Contributors: [https://gitlab.com/kettle-rb/nomono/-/graphs/main][🚎contributors-gl]
+Also see GitLab Contributors: [https://gitlab.com/kettle-dev/nomono/-/graphs/main][🚎contributors-gl]
 
 <details>
  <summary>⭐️ Star History</summary>
@@ -327,12 +327,12 @@ Thanks for RTFM. ☺️
 [✉️ruby-friends]: https://app.daily.dev/squads/rubyfriends
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
-[⛳️gem-namespace]: https://github.com/kettle-rb/nomono
+[⛳️gem-namespace]: https://github.com/kettle-dev/nomono
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-Nomono-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://bestgems.org/gems/nomono
 [⛳️name-img]: https://img.shields.io/badge/name-nomono-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
 [⛳️tag-img]: https://img.shields.io/github/tag/kettle-rb/nomono.svg
-[⛳️tag]: https://github.com/kettle-rb/nomono/releases
+[⛳️tag]: https://github.com/kettle-dev/nomono/releases
 [🚂maint-blog]: http://www.railsbling.com/tags/nomono
 [🚂maint-blog-img]: https://img.shields.io/badge/blog-railsbling-0093D0.svg?style=for-the-badge&logo=rubyonrails&logoColor=orange
 [🚂maint-contact]: http://www.railsbling.com/contact
@@ -367,52 +367,52 @@ Thanks for RTFM. ☺️
 [💁🏼‍♂️peterboling]: http://www.peterboling.com
 [🚂railsbling]: http://www.railsbling.com
 [📜src-gl-img]: https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&logo=Gitlab&logoColor=orange
-[📜src-gl]: https://gitlab.com/kettle-rb/nomono
+[📜src-gl]: https://gitlab.com/kettle-dev/nomono
 [📜src-cb-img]: https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&logo=CodeBerg&logoColor=blue
-[📜src-cb]: https://codeberg.org/kettle-rb/nomono
+[📜src-cb]: https://codeberg.org/kettle-dev/nomono
 [📜src-gh-img]: https://img.shields.io/badge/GitHub-238636?style=for-the-badge&logo=Github&logoColor=green
-[📜src-gh]: https://github.com/kettle-rb/nomono
+[📜src-gh]: https://github.com/kettle-dev/nomono
 [📜docs-cr-rd-img]: https://img.shields.io/badge/RubyDoc-Current_Release-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
 [📜docs-head-rd-img]: https://img.shields.io/badge/YARD_on_Galtzo.com-HEAD-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
-[📜gl-wiki]: https://gitlab.com/kettle-rb/nomono/-/wikis/home
-[📜gh-wiki]: https://github.com/kettle-rb/nomono/wiki
+[📜gl-wiki]: https://gitlab.com/kettle-dev/nomono/-/wikis/home
+[📜gh-wiki]: https://github.com/kettle-dev/nomono/wiki
 [📜gl-wiki-img]: https://img.shields.io/badge/wiki-gitlab-943CD2.svg?style=for-the-badge&logo=gitlab&logoColor=white
 [📜gh-wiki-img]: https://img.shields.io/badge/wiki-github-943CD2.svg?style=for-the-badge&logo=github&logoColor=white
 [👽dl-rank]: https://bestgems.org/gems/nomono
 [👽dl-ranki]: https://img.shields.io/gem/rd/nomono.svg
 [👽version]: https://bestgems.org/gems/nomono
 [👽versioni]: https://img.shields.io/gem/v/nomono.svg
-[🏀qlty-mnt]: https://qlty.sh/gh/kettle-rb/projects/nomono
-[🏀qlty-mnti]: https://qlty.sh/gh/kettle-rb/projects/nomono/maintainability.svg
-[🏀qlty-cov]: https://qlty.sh/gh/kettle-rb/projects/nomono/metrics/code?sort=coverageRating
-[🏀qlty-covi]: https://qlty.sh/gh/kettle-rb/projects/nomono/coverage.svg
+[🏀qlty-mnt]: https://qlty.sh/gh/kettle-dev/projects/nomono
+[🏀qlty-mnti]: https://qlty.sh/gh/kettle-dev/projects/nomono/maintainability.svg
+[🏀qlty-cov]: https://qlty.sh/gh/kettle-dev/projects/nomono/metrics/code?sort=coverageRating
+[🏀qlty-covi]: https://qlty.sh/gh/kettle-dev/projects/nomono/coverage.svg
 [🏀codecov]: https://codecov.io/gh/kettle-rb/nomono
 [🏀codecovi]: https://codecov.io/gh/kettle-rb/nomono/graph/badge.svg
 [🏀coveralls]: https://coveralls.io/github/kettle-rb/nomono?branch=main
 [🏀coveralls-img]: https://coveralls.io/repos/github/kettle-rb/nomono/badge.svg?branch=main
-[🚎ruby-3.2-wf]: https://github.com/kettle-rb/nomono/actions/workflows/ruby-3.2.yml
-[🚎ruby-3.3-wf]: https://github.com/kettle-rb/nomono/actions/workflows/ruby-3.3.yml
-[🚎ruby-3.4-wf]: https://github.com/kettle-rb/nomono/actions/workflows/ruby-3.4.yml
-[🚎truby-24.2-wf]: https://github.com/kettle-rb/nomono/actions/workflows/truffleruby-24.2.yml
-[🚎truby-25.0-wf]: https://github.com/kettle-rb/nomono/actions/workflows/truffleruby-25.0.yml
-[🚎2-cov-wf]: https://github.com/kettle-rb/nomono/actions/workflows/coverage.yml
-[🚎2-cov-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/coverage.yml/badge.svg
-[🚎3-hd-wf]: https://github.com/kettle-rb/nomono/actions/workflows/heads.yml
-[🚎3-hd-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/heads.yml/badge.svg
-[🚎5-st-wf]: https://github.com/kettle-rb/nomono/actions/workflows/style.yml
-[🚎5-st-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/style.yml/badge.svg
-[🚎9-t-wf]: https://github.com/kettle-rb/nomono/actions/workflows/truffle.yml
-[🚎9-t-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/truffle.yml/badge.svg
-[🚎10-j-wf]: https://github.com/kettle-rb/nomono/actions/workflows/jruby.yml
-[🚎10-j-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/jruby.yml/badge.svg
-[🚎11-c-wf]: https://github.com/kettle-rb/nomono/actions/workflows/current.yml
-[🚎11-c-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/current.yml/badge.svg
-[🚎12-crh-wf]: https://github.com/kettle-rb/nomono/actions/workflows/dep-heads.yml
-[🚎12-crh-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/dep-heads.yml/badge.svg
-[🚎13-🔒️-wf]: https://github.com/kettle-rb/nomono/actions/workflows/locked_deps.yml
-[🚎13-🔒️-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/locked_deps.yml/badge.svg
-[🚎14-🔓️-wf]: https://github.com/kettle-rb/nomono/actions/workflows/unlocked_deps.yml
-[🚎14-🔓️-wfi]: https://github.com/kettle-rb/nomono/actions/workflows/unlocked_deps.yml/badge.svg
+[🚎ruby-3.2-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.2.yml
+[🚎ruby-3.3-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.3.yml
+[🚎ruby-3.4-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.4.yml
+[🚎truby-24.2-wf]: https://github.com/kettle-dev/nomono/actions/workflows/truffleruby-24.2.yml
+[🚎truby-25.0-wf]: https://github.com/kettle-dev/nomono/actions/workflows/truffleruby-25.0.yml
+[🚎2-cov-wf]: https://github.com/kettle-dev/nomono/actions/workflows/coverage.yml
+[🚎2-cov-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/coverage.yml/badge.svg
+[🚎3-hd-wf]: https://github.com/kettle-dev/nomono/actions/workflows/heads.yml
+[🚎3-hd-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/heads.yml/badge.svg
+[🚎5-st-wf]: https://github.com/kettle-dev/nomono/actions/workflows/style.yml
+[🚎5-st-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/style.yml/badge.svg
+[🚎9-t-wf]: https://github.com/kettle-dev/nomono/actions/workflows/truffle.yml
+[🚎9-t-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/truffle.yml/badge.svg
+[🚎10-j-wf]: https://github.com/kettle-dev/nomono/actions/workflows/jruby.yml
+[🚎10-j-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/jruby.yml/badge.svg
+[🚎11-c-wf]: https://github.com/kettle-dev/nomono/actions/workflows/current.yml
+[🚎11-c-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/current.yml/badge.svg
+[🚎12-crh-wf]: https://github.com/kettle-dev/nomono/actions/workflows/dep-heads.yml
+[🚎12-crh-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/dep-heads.yml/badge.svg
+[🚎13-🔒️-wf]: https://github.com/kettle-dev/nomono/actions/workflows/locked_deps.yml
+[🚎13-🔒️-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/locked_deps.yml/badge.svg
+[🚎14-🔓️-wf]: https://github.com/kettle-dev/nomono/actions/workflows/unlocked_deps.yml
+[🚎14-🔓️-wfi]: https://github.com/kettle-dev/nomono/actions/workflows/unlocked_deps.yml/badge.svg
 [💎ruby-3.2i]: https://img.shields.io/badge/Ruby-3.2-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.3i]: https://img.shields.io/badge/Ruby-3.3-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.4i]: https://img.shields.io/badge/Ruby-3.4-CC342D?style=for-the-badge&logo=ruby&logoColor=white
@@ -424,34 +424,34 @@ Thanks for RTFM. ☺️
 [💎truby-c-i]: https://img.shields.io/badge/Truffle_Ruby-current-34BCB1?style=for-the-badge&logo=ruby&logoColor=green
 [💎jruby-c-i]: https://img.shields.io/badge/JRuby-current-FBE742?style=for-the-badge&logo=ruby&logoColor=green
 [💎jruby-headi]: https://img.shields.io/badge/JRuby-HEAD-FBE742?style=for-the-badge&logo=ruby&logoColor=blue
-[🤝gh-issues]: https://github.com/kettle-rb/nomono/issues
-[🤝gh-pulls]: https://github.com/kettle-rb/nomono/pulls
-[🤝gl-issues]: https://gitlab.com/kettle-rb/nomono/-/issues
-[🤝gl-pulls]: https://gitlab.com/kettle-rb/nomono/-/merge_requests
-[🤝cb-issues]: https://codeberg.org/kettle-rb/nomono/issues
-[🤝cb-pulls]: https://codeberg.org/kettle-rb/nomono/pulls
+[🤝gh-issues]: https://github.com/kettle-dev/nomono/issues
+[🤝gh-pulls]: https://github.com/kettle-dev/nomono/pulls
+[🤝gl-issues]: https://gitlab.com/kettle-dev/nomono/-/issues
+[🤝gl-pulls]: https://gitlab.com/kettle-dev/nomono/-/merge_requests
+[🤝cb-issues]: https://codeberg.org/kettle-dev/nomono/issues
+[🤝cb-pulls]: https://codeberg.org/kettle-dev/nomono/pulls
 [🤝cb-donate]: https://donate.codeberg.org/
-[🤝contributing]: https://github.com/kettle-rb/nomono/blob/main/CONTRIBUTING.md
+[🤝contributing]: https://github.com/kettle-dev/nomono/blob/main/CONTRIBUTING.md
 [🏀codecov-g]: https://codecov.io/gh/kettle-rb/nomono/graph/badge.svg
 [🖐contrib-rocks]: https://contrib.rocks
-[🖐contributors]: https://github.com/kettle-rb/nomono/graphs/contributors
+[🖐contributors]: https://github.com/kettle-dev/nomono/graphs/contributors
 [🖐contributors-img]: https://contrib.rocks/image?repo=kettle-rb/nomono
-[🚎contributors-gl]: https://gitlab.com/kettle-rb/nomono/-/graphs/main
-[🪇conduct]: https://github.com/kettle-rb/nomono/blob/main/CODE_OF_CONDUCT.md
+[🚎contributors-gl]: https://gitlab.com/kettle-dev/nomono/-/graphs/main
+[🪇conduct]: https://github.com/kettle-dev/nomono/blob/main/CODE_OF_CONDUCT.md
 [🪇conduct-img]: https://img.shields.io/badge/Contributor_Covenant-2.1-259D6C.svg
 [📌pvc]: http://guides.rubygems.org/patterns/#pessimistic-version-constraint
 [📌semver]: https://semver.org/spec/v2.0.0.html
 [📌semver-img]: https://img.shields.io/badge/semver-2.0.0-259D6C.svg?style=flat
 [📌semver-breaking]: https://github.com/semver/semver/issues/716#issuecomment-869336139
 [📌major-versions-not-sacred]: https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html
-[📌changelog]: https://github.com/kettle-rb/nomono/blob/main/CHANGELOG.md
+[📌changelog]: https://github.com/kettle-dev/nomono/blob/main/CHANGELOG.md
 [📗keep-changelog]: https://keepachangelog.com/en/1.0.0/
 [📗keep-changelog-img]: https://img.shields.io/badge/keep--a--changelog-1.0.0-34495e.svg?style=flat
 [📌gitmoji]: https://gitmoji.dev
 [📌gitmoji-img]: https://img.shields.io/badge/gitmoji_commits-%20%F0%9F%98%9C%20%F0%9F%98%8D-34495e.svg?style=flat-square
 [🧮kloc]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [🧮kloc-img]: https://img.shields.io/badge/KLOC-0.086-FFDD67.svg?style=for-the-badge&logo=YouTube&logoColor=blue
-[🔐security]: https://github.com/kettle-rb/nomono/blob/main/SECURITY.md
+[🔐security]: https://github.com/kettle-dev/nomono/blob/main/SECURITY.md
 [🔐security-img]: https://img.shields.io/badge/security-policy-259D6C.svg?style=flat
 [📄copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 [📄license]: LICENSE.md
@@ -465,7 +465,7 @@ Thanks for RTFM. ☺️
 [🚎yard-current]: http://rubydoc.info/gems/nomono
 [🚎yard-head]: https://nomono.galtzo.com
 [💎stone_checksums]: https://github.com/galtzo-floss/stone_checksums
-[💎SHA_checksums]: https://gitlab.com/kettle-rb/nomono/-/tree/main/checksums
+[💎SHA_checksums]: https://gitlab.com/kettle-dev/nomono/-/tree/main/checksums
 [💎rlts]: https://github.com/rubocop-lts/rubocop-lts
 [💎rlts-img]: https://img.shields.io/badge/code_style_&_linting-rubocop--lts-34495e.svg?plastic&logo=ruby&logoColor=white
 [💎appraisal2]: https://github.com/appraisal-rb/appraisal2
@@ -477,8 +477,8 @@ Thanks for RTFM. ☺️
 |---|---|
 | Package | nomono |
 | Description | 1️⃣ Provides nomono_gems and eval_nomono_gems to standardize local multi-repo dependency wiring in Gemfiles. |
-| Homepage | https://github.com/kettle-rb/nomono |
-| Source | https://github.com/kettle-rb/nomono/tree/v1.0.2 |
+| Homepage | https://github.com/kettle-dev/nomono |
+| Source | https://github.com/kettle-dev/nomono/tree/v1.0.2 |
 | License | `AGPL-3.0-only` |
 | Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->
