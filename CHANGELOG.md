@@ -22,6 +22,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Development dependency `kettle-dev` now requires 2.2.0 or newer.
+
 ### Deprecated
 
 ### Removed

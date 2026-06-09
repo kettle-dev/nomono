@@ -478,7 +478,7 @@ Thanks for RTFM. ☺️
 | Package | nomono |
 | Description | 1️⃣ Provides nomono_gems and eval_nomono_gems to standardize local multi-repo dependency wiring in Gemfiles. |
 | Homepage | https://github.com/kettle-rb/nomono |
-| Source | https://github.com/kettle-rb/nomono/tree/v1.0.1 |
+| Source | https://github.com/kettle-rb/nomono/tree/v1.0.2 |
 | License | `AGPL-3.0-only` |
 | Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->
