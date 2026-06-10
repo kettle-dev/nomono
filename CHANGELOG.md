@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Removed a duplicate RBS `Nomono::VERSION` declaration and strengthened the
+  style workflow RBS check to load the signature environment.
+
 ### Security
 
 ## [1.0.3] - 2026-06-10
