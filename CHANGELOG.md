@@ -22,12 +22,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- Development tooling now resolves `kettle-dev` 2.2.3, `kettle-test` 2.0.5,
-  `kettle-soup-cover` 2.0.2, and `yard-fence` 0.9.3 or newer.
-
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.3] - 2026-06-10
+
+- TAG: [v1.0.3][1.0.3t]
+- COVERAGE: 100.00% -- 86/86 lines in 4 files
+- BRANCH COVERAGE: 100.00% -- 28/28 branches in 4 files
+- 12.50% documented
+
+### Changed
+
+- Development tooling now resolves `kettle-dev` 2.2.3, `kettle-test` 2.0.5,
+  `kettle-soup-cover` 2.0.2, and `yard-fence` 0.9.3 or newer.
 
 ### Fixed
 
@@ -35,8 +48,6 @@ Please file a bug if you notice a violation of semantic versioning.
   GitHub organization.
 
 - Corrected misspelled contact metadata to use `galtzo.com`.
-
-### Security
 
 ## [1.0.2] - 2026-05-31
 
@@ -95,7 +106,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-rb/nomono/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/kettle-dev/nomono/compare/v1.0.2...v1.0.3
+[1.0.3t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.3
 [1.0.2]: https://github.com/kettle-rb/nomono/compare/v1.0.1...v1.0.2
 [1.0.2t]: https://github.com/kettle-rb/nomono/releases/tag/v1.0.2
 [1.0.1]: https://github.com/kettle-rb/nomono/compare/v1.0.0...v1.0.1
