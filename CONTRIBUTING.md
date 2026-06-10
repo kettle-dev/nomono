@@ -257,7 +257,7 @@ NOTE: To build without signing the gem set `SKIP_GEM_SIGNING` to any value in th
 [🖐contrib-rocks]: https://contrib.rocks
 [🖐contributors]: https://github.com/kettle-dev/nomono/graphs/contributors
 [🚎contributors-gl]: https://gitlab.com/kettle-dev/nomono/-/graphs/main
-[🖐contributors-img]: https://contrib.rocks/image?repo=kettle-rb/nomono
+[🖐contributors-img]: https://contrib.rocks/image?repo=kettle-dev/nomono
 [💎gem-coop]: https://gem.coop
 [🔒️rubygems-security-guide]: https://guides.rubygems.org/security/#building-gems
 [🔒️rubygems-checksums-pr]: https://github.com/rubygems/rubygems/pull/6022

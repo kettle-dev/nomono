@@ -1,4 +1,4 @@
-<a href="https://github.com/kettle-rb"><img alt="kettle-rb Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/kettle-rb/avatar-128px.svg" width="14%" align="right"/></a>
+<a href="https://github.com/kettle-dev"><img alt="kettle-dev Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/kettle-dev/avatar-128px.svg" width="14%" align="right"/></a>
 
 # 1️⃣ Nomono
 
@@ -65,9 +65,9 @@ not practical for the current toolchain.
 
 | Federated [DVCS][💎d-in-dvcs] Repository | Status | Issues | PRs | Wiki | CI | Discussions |
 |-------------------------------------------------|-----------------------------------------------------------------------|---------------------------|--------------------------|---------------------------|--------------------------|------------------------------|
-| 🧪 [kettle-rb/nomono on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
-| 🧊 [kettle-rb/nomono on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
-| 🐙 [kettle-rb/nomono on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
+| 🧪 [kettle-dev/nomono on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
+| 🧊 [kettle-dev/nomono on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
+| 🐙 [kettle-dev/nomono on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
 | 🎮️ [Discord Server][✉️discord-invite] | [![Live Chat on Discord][✉️discord-invite-img-ftb]][✉️discord-invite] | [Let's][✉️discord-invite] | [talk][✉️discord-invite] | [about][✉️discord-invite] | [this][✉️discord-invite] | [library!][✉️discord-invite] |
 
 </details>
@@ -213,11 +213,11 @@ Also see GitLab Contributors: [https://gitlab.com/kettle-dev/nomono/-/graphs/mai
 <details>
  <summary>⭐️ Star History</summary>
 
-<a href="https://star-history.com/kettle-rb/nomono&Date">
+<a href="https://star-history.com/kettle-dev/nomono&Date">
  <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kettle-rb/nomono&type=Date&theme=dark" />
- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kettle-rb/nomono&type=Date" />
- <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kettle-rb/nomono&type=Date" />
+ <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kettle-dev/nomono&type=Date&theme=dark" />
+ <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kettle-dev/nomono&type=Date" />
+ <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kettle-dev/nomono&type=Date" />
  </picture>
 </a>
 
@@ -282,7 +282,7 @@ To join the community or get help 👇️ Join the Discord.
 
 To say "thanks!" ☝️ Join the Discord or 👇️ send money.
 
-[![Sponsor kettle-rb/nomono on Open Source Collective][🖇osc-all-bottom-img]][🖇osc] 💌 [![Sponsor me on GitHub Sponsors][🖇sponsor-bottom-img]][🖇sponsor] 💌 [![Sponsor me on Liberapay][⛳liberapay-bottom-img]][⛳liberapay] 💌 [![Donate on PayPal][🖇paypal-bottom-img]][🖇paypal]
+[![Sponsor kettle-dev/nomono on Open Source Collective][🖇osc-all-bottom-img]][🖇osc] 💌 [![Sponsor me on GitHub Sponsors][🖇sponsor-bottom-img]][🖇sponsor] 💌 [![Sponsor me on Liberapay][⛳liberapay-bottom-img]][⛳liberapay] 💌 [![Donate on PayPal][🖇paypal-bottom-img]][🖇paypal]
 
 ### Please give the project a star ⭐ ♥.
 
@@ -293,17 +293,17 @@ Thanks for RTFM. ☺️
 [⛳liberapay-img]: https://img.shields.io/liberapay/goal/pboling.svg?logo=liberapay&color=a51611&style=flat
 [⛳liberapay-bottom-img]: https://img.shields.io/liberapay/goal/pboling.svg?style=for-the-badge&logo=liberapay&color=a51611
 [⛳liberapay]: https://liberapay.com/pboling/donate
-[🖇osc-all-img]: https://img.shields.io/opencollective/all/kettle-rb
-[🖇osc-sponsors-img]: https://img.shields.io/opencollective/sponsors/kettle-rb
-[🖇osc-backers-img]: https://img.shields.io/opencollective/backers/kettle-rb
-[🖇osc-backers]: https://opencollective.com/kettle-rb#backer
-[🖇osc-backers-i]: https://opencollective.com/kettle-rb/backers/badge.svg?style=flat
-[🖇osc-sponsors]: https://opencollective.com/kettle-rb#sponsor
-[🖇osc-sponsors-i]: https://opencollective.com/kettle-rb/sponsors/badge.svg?style=flat
-[🖇osc-all-bottom-img]: https://img.shields.io/opencollective/all/kettle-rb?style=for-the-badge
-[🖇osc-sponsors-bottom-img]: https://img.shields.io/opencollective/sponsors/kettle-rb?style=for-the-badge
-[🖇osc-backers-bottom-img]: https://img.shields.io/opencollective/backers/kettle-rb?style=for-the-badge
-[🖇osc]: https://opencollective.com/kettle-rb
+[🖇osc-all-img]: https://img.shields.io/opencollective/all/kettle-dev
+[🖇osc-sponsors-img]: https://img.shields.io/opencollective/sponsors/kettle-dev
+[🖇osc-backers-img]: https://img.shields.io/opencollective/backers/kettle-dev
+[🖇osc-backers]: https://opencollective.com/kettle-dev#backer
+[🖇osc-backers-i]: https://opencollective.com/kettle-dev/backers/badge.svg?style=flat
+[🖇osc-sponsors]: https://opencollective.com/kettle-dev#sponsor
+[🖇osc-sponsors-i]: https://opencollective.com/kettle-dev/sponsors/badge.svg?style=flat
+[🖇osc-all-bottom-img]: https://img.shields.io/opencollective/all/kettle-dev?style=for-the-badge
+[🖇osc-sponsors-bottom-img]: https://img.shields.io/opencollective/sponsors/kettle-dev?style=for-the-badge
+[🖇osc-backers-bottom-img]: https://img.shields.io/opencollective/backers/kettle-dev?style=for-the-badge
+[🖇osc]: https://opencollective.com/kettle-dev
 [🖇sponsor-img]: https://img.shields.io/badge/Sponsor_Me!-pboling.svg?style=social&logo=github
 [🖇sponsor-bottom-img]: https://img.shields.io/badge/Sponsor_Me!-pboling-blue?style=for-the-badge&logo=github
 [🖇sponsor]: https://github.com/sponsors/pboling
@@ -331,7 +331,7 @@ Thanks for RTFM. ☺️
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-Nomono-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://bestgems.org/gems/nomono
 [⛳️name-img]: https://img.shields.io/badge/name-nomono-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
-[⛳️tag-img]: https://img.shields.io/github/tag/kettle-rb/nomono.svg
+[⛳️tag-img]: https://img.shields.io/github/tag/kettle-dev/nomono.svg
 [⛳️tag]: https://github.com/kettle-dev/nomono/releases
 [🚂maint-blog]: http://www.railsbling.com/tags/nomono
 [🚂maint-blog-img]: https://img.shields.io/badge/blog-railsbling-0093D0.svg?style=for-the-badge&logo=rubyonrails&logoColor=orange
@@ -386,10 +386,10 @@ Thanks for RTFM. ☺️
 [🏀qlty-mnti]: https://qlty.sh/gh/kettle-dev/projects/nomono/maintainability.svg
 [🏀qlty-cov]: https://qlty.sh/gh/kettle-dev/projects/nomono/metrics/code?sort=coverageRating
 [🏀qlty-covi]: https://qlty.sh/gh/kettle-dev/projects/nomono/coverage.svg
-[🏀codecov]: https://codecov.io/gh/kettle-rb/nomono
-[🏀codecovi]: https://codecov.io/gh/kettle-rb/nomono/graph/badge.svg
-[🏀coveralls]: https://coveralls.io/github/kettle-rb/nomono?branch=main
-[🏀coveralls-img]: https://coveralls.io/repos/github/kettle-rb/nomono/badge.svg?branch=main
+[🏀codecov]: https://codecov.io/gh/kettle-dev/nomono
+[🏀codecovi]: https://codecov.io/gh/kettle-dev/nomono/graph/badge.svg
+[🏀coveralls]: https://coveralls.io/github/kettle-dev/nomono?branch=main
+[🏀coveralls-img]: https://coveralls.io/repos/github/kettle-dev/nomono/badge.svg?branch=main
 [🚎ruby-3.2-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.2.yml
 [🚎ruby-3.3-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.3.yml
 [🚎ruby-3.4-wf]: https://github.com/kettle-dev/nomono/actions/workflows/ruby-3.4.yml
@@ -432,10 +432,10 @@ Thanks for RTFM. ☺️
 [🤝cb-pulls]: https://codeberg.org/kettle-dev/nomono/pulls
 [🤝cb-donate]: https://donate.codeberg.org/
 [🤝contributing]: https://github.com/kettle-dev/nomono/blob/main/CONTRIBUTING.md
-[🏀codecov-g]: https://codecov.io/gh/kettle-rb/nomono/graph/badge.svg
+[🏀codecov-g]: https://codecov.io/gh/kettle-dev/nomono/graph/badge.svg
 [🖐contrib-rocks]: https://contrib.rocks
 [🖐contributors]: https://github.com/kettle-dev/nomono/graphs/contributors
-[🖐contributors-img]: https://contrib.rocks/image?repo=kettle-rb/nomono
+[🖐contributors-img]: https://contrib.rocks/image?repo=kettle-dev/nomono
 [🚎contributors-gl]: https://gitlab.com/kettle-dev/nomono/-/graphs/main
 [🪇conduct]: https://github.com/kettle-dev/nomono/blob/main/CODE_OF_CONDUCT.md
 [🪇conduct-img]: https://img.shields.io/badge/Contributor_Covenant-2.1-259D6C.svg
@@ -480,5 +480,5 @@ Thanks for RTFM. ☺️
 | Homepage | https://github.com/kettle-dev/nomono |
 | Source | https://github.com/kettle-dev/nomono/tree/v1.0.2 |
 | License | `AGPL-3.0-only` |
-| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
+| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-dev, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->

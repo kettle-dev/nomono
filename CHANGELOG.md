@@ -22,7 +22,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- Development tooling now resolves `kettle-dev` 2.2.0 or newer
+- Development tooling now resolves `kettle-dev` 2.2.3, `kettle-test` 2.0.5,
+  `kettle-soup-cover` 2.0.2, and `yard-fence` 0.9.3 or newer.
 
 ### Deprecated
 
