@@ -458,7 +458,7 @@ Thanks for RTFM. ☺️
 [📄license-ref]: AGPL-3.0-only.md
 [📄license-img]: https://img.shields.io/badge/License-AGPL--3.0--only-259D6C.svg
 [📄license-compat]: https://www.apache.org/legal/resolved.html#category-x
-[📄license-compat-img]: https://img.shields.io/badge/Apache_Incompatible:_Category_X-%E2%9C%97-C0392B.svg?style=flat&logo=Apache
+[📄license-compat-img]: https://img.shields.io/badge/Apache_Incompatible:_Category_X-✗-C0392B.svg?style=flat&logo=Apache
 
 [📄ilo-declaration]: https://www.ilo.org/declaration/lang--en/index.htm
 [📄ilo-declaration-img]: https://img.shields.io/badge/ILO_Fundamental_Principles-✓-259D6C.svg?style=flat
@@ -478,7 +478,7 @@ Thanks for RTFM. ☺️
 | Package | nomono |
 | Description | 1️⃣ Provides nomono_gems and eval_nomono_gems to standardize local multi-repo dependency wiring in Gemfiles. |
 | Homepage | https://github.com/kettle-dev/nomono |
-| Source | https://github.com/kettle-dev/nomono/tree/v1.0.2 |
+| Source | https://github.com/kettle-dev/nomono/tree/v1.0.3 |
 | License | `AGPL-3.0-only` |
-| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-dev, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
+| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-dev, https://opencollective.com/kettle-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->

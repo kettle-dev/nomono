@@ -22,6 +22,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Retemplated with the current kettle-jem template set, refreshing generated
+  README metadata, the templating dependency floor, and the development lockfile.
+
 ### Deprecated
 
 ### Removed
