@@ -22,19 +22,30 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- Retemplated with the current kettle-jem template set, refreshing generated
-  README metadata, the templating dependency floor, and the development lockfile.
-
 ### Deprecated
 
 ### Removed
 
 ### Fixed
 
+### Security
+
+## [1.0.4] - 2026-06-14
+
+- TAG: [v1.0.4][1.0.4t]
+- COVERAGE: 100.00% -- 86/86 lines in 4 files
+- BRANCH COVERAGE: 100.00% -- 28/28 branches in 4 files
+- 12.50% documented
+
+### Changed
+
+- Retemplated with the current kettle-jem template set, refreshing generated
+  README metadata, the templating dependency floor, and the development lockfile.
+
+### Fixed
+
 - Removed a duplicate RBS `Nomono::VERSION` declaration and strengthened the
   style workflow RBS check to load the signature environment.
-
-### Security
 
 ## [1.0.3] - 2026-06-10
 
@@ -112,7 +123,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/kettle-dev/nomono/compare/v1.0.3...v1.0.4
+[1.0.4t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.4
 [1.0.3]: https://github.com/kettle-dev/nomono/compare/v1.0.2...v1.0.3
 [1.0.3t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.3
 [1.0.2]: https://github.com/kettle-rb/nomono/compare/v1.0.1...v1.0.2
