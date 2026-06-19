@@ -324,56 +324,6 @@
       ]
     }
   ],
-  "path_env: \"KETTLE_RB_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        24,
-        43
-      ]
-    },
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        94,
-        103
-      ]
-    }
-  ],
-  "prefix: \"KETTLE_RB\",\npath_env: \"KETTLE_RB_DEV\",": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        23,
-        42
-      ]
-    },
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        93,
-        102
-      ]
-    }
-  ],
-  "prism-merge\npsych-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        17,
-        44
-      ]
-    }
-  ],
-  "psych-merge\nrbs-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        18,
-        45
-      ]
-    }
-  ],
   "strategy: merge\nrecipe: .kettle-jem/recipes/nomono_local_gemfile.yml": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
@@ -381,31 +331,6 @@
         474,
         477,
         480
-      ]
-    }
-  ],
-  "tree_haver\nast-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        10,
-        27
-      ]
-    }
-  ],
-  "vendor_gem_dir_env: \"VENDOR_GEM_DIR\",\ndebug_env: \"KETTLE_DEV_DEBUG\"": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        26,
-        45
-      ]
-    },
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        96,
-        105
       ]
     }
   ]

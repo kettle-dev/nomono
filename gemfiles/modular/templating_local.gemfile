@@ -6,23 +6,6 @@
 
 require "nomono/bundler" unless defined?(Nomono) # rubocop:disable Packaging/RequireRelativeHardcodingLib
 
-local_gems = %w[
-  tree_haver
-  ast-merge
-  bash-merge
-  kettle-drift
-  dotenv-merge
-  json-merge
-  markdown-merge
-  prism-merge
-  psych-merge
-  rbs-merge
-  toml-merge
-  markly-merge
-  kettle-jem
-  jsonc-merge
-]
-
 smorg_rb_local_gems = %w[
   tree_haver
   ast-merge
@@ -97,12 +80,4 @@ platform :mri do
       debug_env: "KETTLE_DEV_DEBUG"
     )
   end
-  eval_nomono_gems(
-    gems: local_gems,
-    prefix: "KETTLE_RB",
-    path_env: "KETTLE_RB_DEV",
-    vendored_gems_env: "VENDORED_GEMS",
-    vendor_gem_dir_env: "VENDOR_GEM_DIR",
-    debug_env: "KETTLE_DEV_DEBUG"
-  )
 end

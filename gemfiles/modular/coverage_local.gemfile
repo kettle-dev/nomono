@@ -10,7 +10,6 @@ local_gems = %w[
   kettle-test
   kettle-soup-cover
   kettle-drift
-  turbo_tests2
 ]
 
 declared_gems = instance_variable_get(:@dependencies).to_a.map(&:name)
@@ -37,12 +36,4 @@ platform :mri do
       debug_env: "GALTZO_FLOSS_DEBUG"
     )
   end
-  eval_nomono_gems(
-    gems: local_gems,
-    prefix: "KETTLE_RB",
-    path_env: "KETTLE_RB_DEV",
-    vendored_gems_env: "VENDORED_GEMS",
-    vendor_gem_dir_env: "VENDOR_GEM_DIR",
-    debug_env: "KETTLE_DEV_DEBUG"
-  )
 end
