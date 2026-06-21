@@ -22,32 +22,32 @@ RSpec.describe Nomono::Resolver do
       env["NOMONO_GEMS_DEV"] = "true"
 
       expect(resolver.gems(gems: gems)).to eq(
-        "kettle-dev" => "/home/test/src/kettle-rb/kettle-dev",
-        "kettle-test" => "/home/test/src/kettle-rb/kettle-test",
-        "kettle-soup-cover" => "/home/test/src/kettle-rb/kettle-soup-cover"
+        "kettle-dev" => "/home/test/src/my/kettle-dev",
+        "kettle-test" => "/home/test/src/my/kettle-test",
+        "kettle-soup-cover" => "/home/test/src/my/kettle-soup-cover"
       )
     end
 
     it "supports vendored overrides with legacy env variable names" do
-      env["NOMONO_GEMS_DEV"] = "/workspace/kettle-rb"
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
       env["VENDORED_GEMS"] = "kettle-test"
-      env["VENDOR_GEM_DIR"] = "/workspace/kettle-rb/vendor"
+      env["VENDOR_GEM_DIR"] = "/workspace/my/vendor"
 
       expect(resolver.gems(gems: gems)).to eq(
-        "kettle-dev" => "/workspace/kettle-rb/kettle-dev",
-        "kettle-test" => "/workspace/kettle-rb/vendor/kettle-test",
-        "kettle-soup-cover" => "/workspace/kettle-rb/kettle-soup-cover"
+        "kettle-dev" => "/workspace/my/kettle-dev",
+        "kettle-test" => "/workspace/my/vendor/kettle-test",
+        "kettle-soup-cover" => "/workspace/my/kettle-soup-cover"
       )
     end
 
     it "ignores invalid and non-allowlisted vendored entries" do
-      env["NOMONO_GEMS_DEV"] = "/workspace/kettle-rb"
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
       env["VENDORED_GEMS"] = "kettle-test,../bad,kettle-devs"
 
       expect(resolver.gems(gems: gems)).to eq(
-        "kettle-dev" => "/workspace/kettle-rb/kettle-dev",
-        "kettle-test" => "/workspace/kettle-rb/vendor/kettle-test",
-        "kettle-soup-cover" => "/workspace/kettle-rb/kettle-soup-cover"
+        "kettle-dev" => "/workspace/my/kettle-dev",
+        "kettle-test" => "/workspace/my/vendor/kettle-test",
+        "kettle-soup-cover" => "/workspace/my/kettle-soup-cover"
       )
     end
 
@@ -65,12 +65,12 @@ RSpec.describe Nomono::Resolver do
     end
 
     it "prints resolved paths when debug mode is enabled" do
-      env["NOMONO_GEMS_DEV"] = "/workspace/kettle-rb"
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
       env["KETTLE_DEV_DEBUG"] = "yes"
 
       expect do
         resolver.gems(gems: %w[kettle-dev])
-      end.to output(%r{Nomono gem_paths: \{"kettle-dev"\s*=>\s*"/workspace/kettle-rb/kettle-dev"\}}).to_stdout
+      end.to output(%r{Nomono gem_paths: \{"kettle-dev"\s*=>\s*"/workspace/my/kettle-dev"\}}).to_stdout
     end
 
     it "rejects invalid gem names" do
@@ -94,7 +94,7 @@ RSpec.describe Nomono::Resolver do
 
       expect(
         resolver.gems(gems: %w[kettle-dev], allowlist: %w[kettle-test], strict: false)
-      ).to eq("kettle-dev" => "/home/test/src/kettle-rb/kettle-dev")
+      ).to eq("kettle-dev" => "/home/test/src/my/kettle-dev")
     end
   end
 end

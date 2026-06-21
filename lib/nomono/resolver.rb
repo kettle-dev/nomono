@@ -12,7 +12,7 @@ module Nomono
     end
 
     def gems(gems:, prefix: "NOMONO_GEMS", allowlist: gems, path_env: nil, vendored_gems_env: nil, vendor_gem_dir_env: nil,
-      debug_env: nil, root: ["src", "kettle-rb"], strict: true)
+      debug_env: nil, root: ["src", "my"], strict: true)
       requested = normalize_gems(gems)
       allowed = normalize_gems(allowlist)
       requested.each { |gem_name| validate_gem_name!(gem_name, allowed, strict: strict) }

@@ -32,6 +32,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Updated the default local workspace root from `$HOME/src/kettle-rb` to
+  `$HOME/src/my`.
+
 ### Security
 
 ## [1.0.4] - 2026-06-14
