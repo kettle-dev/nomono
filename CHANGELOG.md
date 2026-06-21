@@ -136,9 +136,9 @@ Please file a bug if you notice a violation of semantic versioning.
 [1.0.4t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.4
 [1.0.3]: https://github.com/kettle-dev/nomono/compare/v1.0.2...v1.0.3
 [1.0.3t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.3
-[1.0.2]: https://github.com/kettle-rb/nomono/compare/v1.0.1...v1.0.2
-[1.0.2t]: https://github.com/kettle-rb/nomono/releases/tag/v1.0.2
-[1.0.1]: https://github.com/kettle-rb/nomono/compare/v1.0.0...v1.0.1
-[1.0.1t]: https://github.com/kettle-rb/nomono/releases/tag/v1.0.1
-[1.0.0]: https://github.com/kettle-rb/nomono/compare/3080fe8ceff657265445e8b4936aa2a90faa37f9...v1.0.0
-[1.0.0t]: https://github.com/kettle-rb/nomono/tags/v1.0.0
+[1.0.2]: https://github.com/kettle-dev/nomono/compare/v1.0.1...v1.0.2
+[1.0.2t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.2
+[1.0.1]: https://github.com/kettle-dev/nomono/compare/v1.0.0...v1.0.1
+[1.0.1t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.1
+[1.0.0]: https://github.com/kettle-dev/nomono/compare/3080fe8ceff657265445e8b4936aa2a90faa37f9...v1.0.0
+[1.0.0t]: https://github.com/kettle-dev/nomono/tags/v1.0.0
