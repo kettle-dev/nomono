@@ -32,6 +32,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Corrected OpenCollective funding metadata to use the `kettle-dev` collective.
 - Updated the default local workspace root from `$HOME/src/kettle-rb` to
   `$HOME/src/my`.
 

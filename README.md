@@ -28,7 +28,7 @@ It provides two Gemfile macros:
 - `nomono_gems(**opts)` returns `{ gem_name => absolute_path }`
 - `eval_nomono_gems(**opts)` directly emits `gem "name", path: "..."`
 
-The API mirrors existing `*_local.gemfile` patterns used in kettle-rb projects, but centralizes path/env logic in one reusable library.
+The API mirrors existing `*_local.gemfile` patterns used in kettle-dev projects, but centralizes path/env logic in one reusable library.
 
 ## 💡 Info you can shake a stick at
 
@@ -133,7 +133,7 @@ Nomono has an *environment contract*. By default (`prefix: "NOMONO_GEMS"`):
 
 - `NOMONO_GEMS_DEV` controls local-path mode — **tri-state**:
   - `false` / `0` / `no` / `off` (or unset) — no local gems; released gems are used (CI default)
-  - `true` / `1` / `yes` / `on` — workspace root is `$HOME/src/kettle-rb`
+  - `true` / `1` / `yes` / `on` — workspace root is `$HOME/src/kettle-dev`
   - Any other value — treated as an explicit workspace root path (`/absolute/path` used as-is; relative path prepended with `$HOME`)
 - `NOMONO_GEMS_VENDORED_GEMS` (or legacy `VENDORED_GEMS`) is a comma-delimited list of gem names resolved from a vendor directory. This is **independent** of `NOMONO_GEMS_DEV` — it applies when you have vendored copies of specific gems that should override both the workspace and released versions.
 - `NOMONO_GEMS_VENDOR_GEM_DIR` (or legacy `VENDOR_GEM_DIR`) is the base path of the vendor directory used for gems listed in `NOMONO_GEMS_VENDORED_GEMS`. Defaults to `$workspace_root/vendor`. This is **not** an alternative form of the workspace root — it only affects vendored gems.
@@ -141,11 +141,11 @@ Nomono has an *environment contract*. By default (`prefix: "NOMONO_GEMS"`):
 
 ### Examples
 
-For example, in the `kettle-rb` family of gems, which nomono is a part of, the parameters used are `prefix: "KETTLE_RB"`, `path_env: "KETTLE_RB_DEV"`.
+For example, in the `kettle-dev` family of gems, which nomono is a part of, the parameters used are `prefix: "KETTLE_RB"`, `path_env: "KETTLE_RB_DEV"`.
 This means that the following is true:
 
 - `KETTLE_RB_DEV=false` (or unset) — released gems from configured gem server (CI / single-gem development default)
-- `KETTLE_RB_DEV=true` — local sibling gems from `$HOME/src/kettle-rb/<gem>` (recommended for full-workspace development)
+- `KETTLE_RB_DEV=true` — local sibling gems from `$HOME/src/kettle-dev/<gem>` (recommended for full-workspace development)
 - `KETTLE_RB_DEV=/custom/path` — local sibling gems from `/custom/path/<gem>` (non-standard workspace layout only)
 
 You can override the env variable names via options. Here is an example for use with rubocop-lts gems:
@@ -500,5 +500,5 @@ Thanks for RTFM. ☺️
 | Homepage | https://github.com/kettle-dev/nomono |
 | Source | https://github.com/kettle-dev/nomono |
 | License | `AGPL-3.0-only` |
-| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-dev, https://opencollective.com/kettle-rb, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
+| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/kettle-dev, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/nomono, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->
