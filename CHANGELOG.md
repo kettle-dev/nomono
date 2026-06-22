@@ -20,11 +20,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- Added support for JRuby 10.1 and TruffleRuby 34.0.
-
 ### Changed
-
-- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 
 ### Deprecated
 
@@ -32,11 +28,28 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [1.0.5] - 2026-06-21
+
+- TAG: [v1.0.5][1.0.5t]
+- COVERAGE: 97.73% -- 86/88 lines in 5 files
+- BRANCH COVERAGE: 100.00% -- 28/28 branches in 5 files
+- 12.50% documented
+
+### Added
+
+- Added support for JRuby 10.1 and TruffleRuby 34.0.
+
+### Changed
+
+- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
+
+### Fixed
+
 - Corrected OpenCollective funding metadata to use the `kettle-dev` collective.
 - Updated the default local workspace root from `$HOME/src/kettle-rb` to
   `$HOME/src/my`.
-
-### Security
 
 ## [1.0.4] - 2026-06-14
 
@@ -131,7 +144,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/kettle-dev/nomono/compare/v1.0.4...v1.0.5
+[1.0.5t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.5
 [1.0.4]: https://github.com/kettle-dev/nomono/compare/v1.0.3...v1.0.4
 [1.0.4t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.4
 [1.0.3]: https://github.com/kettle-dev/nomono/compare/v1.0.2...v1.0.3

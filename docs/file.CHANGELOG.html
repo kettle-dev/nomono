@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.0.4...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.0.5...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -84,6 +84,37 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 
 <h3 id="security">Security</h3>
 
+<h2 id="105---2026-06-21">
+<a href="https://github.com/kettle-dev/nomono/compare/v1.0.4...v1.0.5">1.0.5</a> - 2026-06-21</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.0.5">v1.0.5</a>
+</li>
+  <li>COVERAGE: 97.73% – 86/88 lines in 5 files</li>
+  <li>BRANCH COVERAGE: 100.00% – 28/28 branches in 5 files</li>
+  <li>12.50% documented</li>
+</ul>
+
+<h3 id="added-1">Added</h3>
+
+<ul>
+  <li>Added support for JRuby 10.1 and TruffleRuby 34.0.</li>
+</ul>
+
+<h3 id="changed-1">Changed</h3>
+
+<ul>
+  <li>Retemplated project metadata and CI/development automation with <code>kettle-jem</code> v7.0.0.</li>
+</ul>
+
+<h3 id="fixed-1">Fixed</h3>
+
+<ul>
+  <li>Corrected OpenCollective funding metadata to use the <code>kettle-dev</code> collective.</li>
+  <li>Updated the default local workspace root from <code>$HOME/src/kettle-rb</code> to<br>
+<code>$HOME/src/my</code>.</li>
+</ul>
+
 <h2 id="104---2026-06-14">
 <a href="https://github.com/kettle-dev/nomono/compare/v1.0.3...v1.0.4">1.0.4</a> - 2026-06-14</h2>
 
@@ -95,14 +126,14 @@ Please file a bug if you notice a violation of semantic versioning.</p>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 
 <ul>
   <li>Retemplated with the current kettle-jem template set, refreshing generated<br>
 README metadata, the templating dependency floor, and the development lockfile.</li>
 </ul>
 
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 
 <ul>
   <li>Removed a duplicate RBS <code>Nomono::VERSION</code> declaration and strengthened the<br>
@@ -120,14 +151,14 @@ style workflow RBS check to load the signature environment.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 
 <ul>
   <li>Development tooling now resolves <code>kettle-dev</code> 2.2.3, <code>kettle-test</code> 2.0.5,<br>
 <code>kettle-soup-cover</code> 2.0.2, and <code>yard-fence</code> 0.9.3 or newer.</li>
 </ul>
 
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 
 <ul>
   <li>
@@ -140,46 +171,10 @@ GitHub organization.</p>
 </ul>
 
 <h2 id="102---2026-05-31">
-<a href="https://github.com/kettle-rb/nomono/compare/v1.0.1...v1.0.2">1.0.2</a> - 2026-05-31</h2>
+<a href="https://github.com/kettle-dev/nomono/compare/v1.0.1...v1.0.2">1.0.2</a> - 2026-05-31</h2>
 
 <ul>
-  <li>TAG: <a href="https://github.com/kettle-rb/nomono/releases/tag/v1.0.2">v1.0.2</a>
-</li>
-  <li>COVERAGE: 100.00% – 86/86 lines in 4 files</li>
-  <li>BRANCH COVERAGE: 100.00% – 28/28 branches in 4 files</li>
-  <li>12.50% documented</li>
-</ul>
-
-<h3 id="added-1">Added</h3>
-
-<ul>
-  <li>Added StructuredMerge git diff driver configuration and the incident response<br>
-plan from the current kettle-jem template.</li>
-</ul>
-
-<h3 id="changed-3">Changed</h3>
-
-<ul>
-  <li>Retemplated with the current kettle-jem template set, including the<br>
-<code>.structuredmerge/kettle-jem.yml</code> config migration, README logo and<br>
-templating attribution refresh, current modular Gemfile dependencies, and the<br>
-<code>kettle-dev</code> 2.0.6 development dependency floor.</li>
-</ul>
-
-<h3 id="fixed-3">Fixed</h3>
-
-<ul>
-  <li>Fixed generated documentation URLs that incorrectly pointed at a monorepo<br>
-<code>gems/nomono</code> path.</li>
-  <li>Made the debug-output resolver spec tolerant of Ruby implementation<br>
-differences in <code>Hash#inspect</code> spacing.</li>
-</ul>
-
-<h2 id="101---2026-05-27">
-<a href="https://github.com/kettle-rb/nomono/compare/v1.0.0...v1.0.1">1.0.1</a> - 2026-05-27</h2>
-
-<ul>
-  <li>TAG: <a href="https://github.com/kettle-rb/nomono/releases/tag/v1.0.1">v1.0.1</a>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.0.2">v1.0.2</a>
 </li>
   <li>COVERAGE: 100.00% – 86/86 lines in 4 files</li>
   <li>BRANCH COVERAGE: 100.00% – 28/28 branches in 4 files</li>
@@ -189,16 +184,52 @@ differences in <code>Hash#inspect</code> spacing.</li>
 <h3 id="added-2">Added</h3>
 
 <ul>
-  <li>Improved documentation of ENV variables and overrides in README.md</li>
+  <li>Added StructuredMerge git diff driver configuration and the incident response<br>
+plan from the current kettle-jem template.</li>
 </ul>
 
 <h3 id="changed-4">Changed</h3>
 
 <ul>
-  <li>Retemplated with the current kettle-jem template set.</li>
+  <li>Retemplated with the current kettle-jem template set, including the<br>
+<code>.structuredmerge/kettle-jem.yml</code> config migration, README logo and<br>
+templating attribution refresh, current modular Gemfile dependencies, and the<br>
+<code>kettle-dev</code> 2.0.6 development dependency floor.</li>
 </ul>
 
 <h3 id="fixed-4">Fixed</h3>
+
+<ul>
+  <li>Fixed generated documentation URLs that incorrectly pointed at a monorepo<br>
+<code>gems/nomono</code> path.</li>
+  <li>Made the debug-output resolver spec tolerant of Ruby implementation<br>
+differences in <code>Hash#inspect</code> spacing.</li>
+</ul>
+
+<h2 id="101---2026-05-27">
+<a href="https://github.com/kettle-dev/nomono/compare/v1.0.0...v1.0.1">1.0.1</a> - 2026-05-27</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.0.1">v1.0.1</a>
+</li>
+  <li>COVERAGE: 100.00% – 86/86 lines in 4 files</li>
+  <li>BRANCH COVERAGE: 100.00% – 28/28 branches in 4 files</li>
+  <li>12.50% documented</li>
+</ul>
+
+<h3 id="added-3">Added</h3>
+
+<ul>
+  <li>Improved documentation of ENV variables and overrides in README.md</li>
+</ul>
+
+<h3 id="changed-5">Changed</h3>
+
+<ul>
+  <li>Retemplated with the current kettle-jem template set.</li>
+</ul>
+
+<h3 id="fixed-5">Fixed</h3>
 
 <ul>
   <li>(dev) Updated the development dependency floor to <code>kettle-dev</code> 2.0.1 so the<br>
@@ -212,10 +243,10 @@ behavior.</li>
 </ul>
 
 <h2 id="100---2026-03-26">
-<a href="https://github.com/kettle-rb/nomono/compare/3080fe8ceff657265445e8b4936aa2a90faa37f9...v1.0.0">1.0.0</a> - 2026-03-26</h2>
+<a href="https://github.com/kettle-dev/nomono/compare/3080fe8ceff657265445e8b4936aa2a90faa37f9...v1.0.0">1.0.0</a> - 2026-03-26</h2>
 
 <ul>
-  <li>TAG: <a href="https://github.com/kettle-rb/nomono/tags/v1.0.0">v1.0.0</a>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/tags/v1.0.0">v1.0.0</a>
 </li>
   <li>12.50% documented</li>
 </ul>
@@ -223,7 +254,7 @@ behavior.</li>
 </div></div>
 
       <div id="footer">
-  Generated on Sun Jun 14 02:02:55 2026 by
+  Generated on Sun Jun 21 18:11:10 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>
