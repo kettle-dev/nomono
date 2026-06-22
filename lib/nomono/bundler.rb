@@ -1,5 +1,4 @@
 # frozen_string_literal: true
 
-require_relative "../nomono"
-
+require_relative "core"
 Nomono.install!

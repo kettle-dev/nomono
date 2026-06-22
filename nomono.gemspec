@@ -101,9 +101,6 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  # Utilities
-  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.12")              # ruby >= 2.2.0
-
   # NOTE: It is preferable to list development dependencies in the gemspec due to increased
   #       visibility and discoverability.
   #       However, development dependencies in gemspec will install on
