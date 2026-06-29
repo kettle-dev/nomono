@@ -371,8 +371,12 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  aarch64-linux
+  aarch64-linux-gnu
   aarch64-linux-gnu
   aarch64-linux-musl
+  aarch64-linux-musl
+  arm64-darwin
   arm64-darwin
   x86_64-linux
   x86_64-linux-gnu
