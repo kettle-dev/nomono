@@ -28,9 +28,18 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Package configured license files in gem release file lists.
-
 ### Security
+
+## [1.0.7] - 2026-07-01
+
+- TAG: [v1.0.7][1.0.7t]
+- COVERAGE: 100.00% -- 88/88 lines in 6 files
+- BRANCH COVERAGE: 100.00% -- 28/28 branches in 6 files
+- 12.50% documented
+
+### Fixed
+
+- Package configured license files in gem release file lists.
 
 ## [1.0.6] - 2026-06-22
 
@@ -162,7 +171,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.7...HEAD
+[1.0.7]: https://github.com/kettle-dev/nomono/compare/v1.0.6...v1.0.7
+[1.0.7t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.7
 [1.0.6]: https://github.com/kettle-dev/nomono/compare/v1.0.5...v1.0.6
 [1.0.6t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.6
 [1.0.5]: https://github.com/kettle-dev/nomono/compare/v1.0.4...v1.0.5
