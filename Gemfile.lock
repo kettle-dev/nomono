@@ -9,7 +9,6 @@ PATH
   remote: .
   specs:
     nomono (1.0.7)
-      version_gem (~> 1.1, >= 1.1.13)
 
 GEM
   remote: https://gem.coop/
