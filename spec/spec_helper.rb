@@ -8,7 +8,7 @@
 #       The rescue LoadError handles that scenario.
 # NOTE: We can't track coverage in this gem when local dependencies are used,
 #       because they result in loading this gem early.
-#       To generate coverage data KETTLE_RB_DEV=true must be set.
+#       To generate coverage data KETTLE_DEV_DEV=true must be set.
 begin
   require "kettle-soup-cover"
   if Kettle::Soup::Cover::DO_COV

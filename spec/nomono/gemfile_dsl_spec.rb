@@ -18,11 +18,11 @@ RSpec.describe Nomono::GemfileDsl do
 
   it "evaluates gems into Gemfile gem(path:) calls" do
     env = {
-      "KETTLE_RB_DEV" => "/workspace/my"
+      "KETTLE_DEV_DEV" => "/workspace/my"
     }
     allow(Nomono).to receive(:resolver).and_return(Nomono::Resolver.new(env: env, home: "/home/test"))
 
-    dsl.eval_nomono_gems(gems: %w[kettle-dev], prefix: "KETTLE_RB")
+    dsl.eval_nomono_gems(gems: %w[kettle-dev], prefix: "KETTLE_DEV")
 
     expect(dsl.captured).to eq([
       ["kettle-dev", {path: "/workspace/my/kettle-dev"}]

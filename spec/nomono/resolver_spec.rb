@@ -52,14 +52,14 @@ RSpec.describe Nomono::Resolver do
     end
 
     it "supports alternate family prefixes" do
-      env["KETTLE_RB_DEV"] = "relative/path"
+      env["KETTLE_DEV_DEV"] = "relative/path"
 
       expect(
         resolver.gems(
           gems: gems,
-          prefix: "KETTLE_RB",
-          vendored_gems_env: "KETTLE_RB_VENDORED_GEMS",
-          vendor_gem_dir_env: "KETTLE_RB_VENDOR_GEM_DIR"
+          prefix: "KETTLE_DEV",
+          vendored_gems_env: "KETTLE_DEV_VENDORED_GEMS",
+          vendor_gem_dir_env: "KETTLE_DEV_VENDOR_GEM_DIR"
         )
       ).to include("kettle-dev" => "/home/test/relative/path/kettle-dev")
     end
