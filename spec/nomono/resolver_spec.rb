@@ -64,6 +64,126 @@ RSpec.describe Nomono::Resolver do
       ).to include("kettle-dev" => "/home/test/relative/path/kettle-dev")
     end
 
+    it "ignores unknown future keyword options" do
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
+
+      expect(
+        resolver.gems(gems: %w[kettle-dev], future_option: "ignored")
+      ).to eq("kettle-dev" => "/workspace/my/kettle-dev")
+    end
+
+    it "normalizes configured path aliases before returning gem paths" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+
+      expect(
+        resolver.gems(
+          gems: %w[kettle-dev],
+          prefix: "KETTLE_DEV",
+          path_aliases: {"/var/home/test" => "/home/test"}
+        )
+      ).to eq("kettle-dev" => "/home/test/src/my/kettle-dev")
+    end
+
+    it "normalizes vendored gem paths with configured path aliases" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      env["VENDORED_GEMS"] = "kettle-test"
+      env["VENDOR_GEM_DIR"] = "/var/home/test/src/my/vendor"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+
+      expect(
+        resolver.gems(
+          gems: gems,
+          prefix: "KETTLE_DEV",
+          path_aliases: [["/var/home/test", "/home/test"]]
+        )
+      ).to include("kettle-test" => "/home/test/src/my/vendor/kettle-test")
+    end
+
+    it "supports path aliases from family env configuration" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      env["KETTLE_DEV_PATH_ALIASES"] = "/var/home/test=/home/test"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+
+      expect(
+        resolver.gems(gems: %w[kettle-dev], prefix: "KETTLE_DEV")
+      ).to eq("kettle-dev" => "/home/test/src/my/kettle-dev")
+    end
+
+    it "supports global path aliases env fallback" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      env["NOMONO_PATH_ALIASES"] = "/var/home/test=/home/test"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+
+      expect(
+        resolver.gems(gems: %w[kettle-dev], prefix: "KETTLE_DEV")
+      ).to eq("kettle-dev" => "/home/test/src/my/kettle-dev")
+    end
+
+    it "uses the most specific matching path alias" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/var/home/test/src").and_return("/mnt/home/test/src")
+      allow(File).to receive(:realpath).with("/workspace/src").and_return("/mnt/home/test/src")
+
+      expect(
+        resolver.gems(
+          gems: %w[kettle-dev],
+          prefix: "KETTLE_DEV",
+          path_aliases: {
+            "/var/home/test" => "/home/test",
+            "/var/home/test/src" => "/workspace/src"
+          }
+        )
+      ).to eq("kettle-dev" => "/workspace/src/my/kettle-dev")
+    end
+
+    it "rejects path aliases that do not resolve to the same directory" do
+      env["KETTLE_DEV_DEV"] = "/var/home/test/src/my"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/other/home/test")
+
+      expect do
+        resolver.gems(
+          gems: %w[kettle-dev],
+          prefix: "KETTLE_DEV",
+          path_aliases: {"/var/home/test" => "/home/test"}
+        )
+      end.to raise_error(Nomono::Error, %r{does not resolve to the same directory})
+    end
+
+    it "rejects malformed path alias env entries" do
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
+      env["NOMONO_GEMS_PATH_ALIASES"] = "/var/home/test"
+
+      expect do
+        resolver.gems(gems: %w[kettle-dev])
+      end.to raise_error(Nomono::Error, "path aliases must be configured as source=canonical pairs")
+    end
+
+    it "wraps realpath system errors when path aliases cannot be verified" do
+      env["NOMONO_GEMS_DEV"] = "/workspace/my"
+      allow(File).to receive(:realpath).with("/var/home/test").and_raise(Errno::ENOTDIR, "/var/home/test")
+
+      expect do
+        resolver.gems(
+          gems: %w[kettle-dev],
+          path_aliases: {"/var/home/test" => "/home/test"}
+        )
+      end.to raise_error(Nomono::Error, %r{cannot be verified})
+    end
+
     it "prints resolved paths when debug mode is enabled" do
       env["NOMONO_GEMS_DEV"] = "/workspace/my"
       env["KETTLE_DEV_DEBUG"] = "yes"

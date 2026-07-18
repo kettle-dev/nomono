@@ -139,6 +139,7 @@ Nomono has an *environment contract*. By default (`prefix: "NOMONO_GEMS"`):
   - Any other value — treated as an explicit workspace root path (`/absolute/path` used as-is; relative path prepended with `$HOME`)
 - `NOMONO_GEMS_VENDORED_GEMS` (or legacy `VENDORED_GEMS`) is a comma-delimited list of gem names resolved from a vendor directory. This is **independent** of `NOMONO_GEMS_DEV` — it applies when you have vendored copies of specific gems that should override both the workspace and released versions.
 - `NOMONO_GEMS_VENDOR_GEM_DIR` (or legacy `VENDOR_GEM_DIR`) is the base path of the vendor directory used for gems listed in `NOMONO_GEMS_VENDORED_GEMS`. Defaults to `$workspace_root/vendor`. This is **not** an alternative form of the workspace root — it only affects vendored gems.
+- `NOMONO_GEMS_PATH_ALIASES` (or global fallback `NOMONO_PATH_ALIASES`) is a comma-delimited list of `source=canonical` absolute path aliases. Each pair must resolve to the same real directory. Matching local gem paths are rewritten to the canonical spelling before Bundler receives them, preventing `Gemfile.lock` churn from equivalent paths such as `/var/home/...` and `/home/...`.
 - `NOMONO_GEMS_DEBUG` enables debug output from nomono.
 
 ### Examples
@@ -190,6 +191,9 @@ eval_nomono_gems(
   gems: %w[kettle-dev kettle-test kettle-soup-cover],
   prefix: "KETTLE_DEV",
   path_env: "KETTLE_DEV_DEV",
+  path_aliases: {
+    "/var/home/pboling" => "/home/pboling"
+  },
   vendored_gems_env: "VENDORED_GEMS",
   vendor_gem_dir_env: "VENDOR_GEM_DIR",
   debug_env: "KETTLE_DEV_DEBUG"

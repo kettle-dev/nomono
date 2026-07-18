@@ -12,7 +12,7 @@ module Nomono
     end
 
     def gems(gems:, prefix: "NOMONO_GEMS", allowlist: gems, path_env: nil, vendored_gems_env: nil, vendor_gem_dir_env: nil,
-      debug_env: nil, root: ["src", "my"], strict: true)
+      debug_env: nil, path_aliases: nil, path_aliases_env: nil, root: ["src", "my"], strict: true, **_options)
       requested = normalize_gems(gems)
       allowed = normalize_gems(allowlist)
       requested.each { |gem_name| validate_gem_name!(gem_name, allowed, strict: strict) }
@@ -25,10 +25,13 @@ module Nomono
       vendored = parse_vendored(fetch_with_fallback(vendored_gems_env || "#{prefix}_VENDORED_GEMS", "", "VENDORED_GEMS"), allowed)
       vendor_dir_value = fetch_with_fallback(vendor_gem_dir_env || "#{prefix}_VENDOR_GEM_DIR", File.join(dev_root, "vendor"), "VENDOR_GEM_DIR")
       vendor_dir = absolutize(vendor_dir_value)
+      aliases = normalize_path_aliases(
+        path_aliases || fetch_with_fallback(path_aliases_env || "#{prefix}_PATH_ALIASES", "", "NOMONO_PATH_ALIASES")
+      )
 
       gem_paths = requested.each_with_object({}) do |gem_name, memo|
         base = vendored.include?(gem_name) ? vendor_dir : dev_root
-        memo[gem_name] = File.join(base, gem_name)
+        memo[gem_name] = normalize_path_alias(File.join(base, gem_name), aliases)
       end
 
       debug_key = debug_env || "#{prefix}_DEBUG"
@@ -84,6 +87,65 @@ module Nomono
       return path if path.start_with?("/")
 
       join_home(path)
+    end
+
+    def normalize_path_aliases(value)
+      aliases = case value
+      when nil
+        []
+      when Hash
+        value.map { |source, canonical| [source.to_s, canonical.to_s] }
+      when Array
+        value.map do |entry|
+          unless entry.respond_to?(:to_ary) && entry.to_ary.size == 2
+            raise Error, "path aliases must be configured as source=canonical pairs"
+          end
+
+          entry.to_ary.map(&:to_s)
+        end
+      else
+        value.to_s.split(",").map do |entry|
+          next if entry.strip.empty?
+
+          source, canonical = entry.split("=", 2).map { |part| part.to_s.strip }
+          [source, canonical]
+        end.compact
+      end
+
+      aliases.map do |source, canonical|
+        validate_path_alias!(source, canonical)
+        [strip_trailing_slash(source), strip_trailing_slash(canonical)]
+      end.sort_by { |source, _canonical| -source.length }
+    end
+
+    def validate_path_alias!(source, canonical)
+      if source.to_s.empty? || canonical.to_s.empty?
+        raise Error, "path aliases must be configured as source=canonical pairs"
+      end
+      unless source.start_with?("/") && canonical.start_with?("/")
+        raise Error, "path aliases must use absolute paths"
+      end
+      return if File.realpath(source) == File.realpath(canonical)
+
+      raise Error, "path alias #{source}=#{canonical} does not resolve to the same directory"
+    rescue SystemCallError => e
+      raise Error, "path alias #{source}=#{canonical} cannot be verified: #{e.message}"
+    end
+
+    def normalize_path_alias(path, aliases)
+      aliases.each do |source, canonical|
+        next unless path == source || path.start_with?("#{source}/")
+
+        return "#{canonical}#{path.delete_prefix(source)}"
+      end
+
+      path
+    end
+
+    def strip_trailing_slash(path)
+      path = path.dup
+      path.chop! while path.end_with?("/")
+      path
     end
 
     def join_home(*segments)
