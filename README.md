@@ -176,7 +176,7 @@ source "https://gem.coop"
 if ENV.fetch("KETTLE_DEV_DEV", "false").casecmp("false").zero?
   gem "kettle-dev", "~> 2.2", ">= 2.2.15"
   gem "kettle-test", "~> 2.0", ">= 2.0.6"
-  gem "kettle-soup-cover", "~> 3.0.a", ">= 3.0.0.rc4"
+  gem "kettle-soup-cover", "~> 3.0", ">= 3.0.1"
 else
   eval_gemfile "gemfiles/modular/local.gemfile"
 end
