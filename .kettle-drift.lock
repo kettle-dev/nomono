@@ -293,7 +293,7 @@
       "lines": [
         44,
         105,
-        154
+        159
       ]
     }
   ],
@@ -307,102 +307,12 @@
       ]
     }
   ],
-  "ast-crispr\nast-crispr-markdown-markly": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        59,
-        92
-      ]
-    }
-  ],
-  "ast-crispr-markdown-markly\nast-crispr-ruby-prism": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        60,
-        93
-      ]
-    }
-  ],
-  "ast-merge\nast-merge-git": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        33,
-        66
-      ]
-    }
-  ],
-  "ast-merge-git\nast-template": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        34,
-        67
-      ]
-    }
-  ],
-  "ast-template\nbash-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        35,
-        68
-      ]
-    }
-  ],
-  "bash-merge\nbinary-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        36,
-        69
-      ]
-    }
-  ],
-  "binary-merge\ncommonmarker-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        37,
-        70
-      ]
-    }
-  ],
-  "citrus-toml-merge\ndotenv-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        39,
-        72
-      ]
-    }
-  ],
-  "commonmarker-merge\ncitrus-toml-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        38,
-        71
-      ]
-    }
-  ],
   "debug_env: \"RUBOCOP_LTS_DEBUG\",\nroot: [\"src\", \"rubocop-lts\"]": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         50,
         59
-      ]
-    }
-  ],
-  "dotenv-merge\ngo-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        40,
-        73
       ]
     }
   ],
@@ -416,69 +326,6 @@
       ]
     }
   ],
-  "go-merge\njson-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        41,
-        74
-      ]
-    }
-  ],
-  "json-merge\nkettle-jem": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        42,
-        75
-      ]
-    }
-  ],
-  "kettle-jem\nkramdown-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        43,
-        76
-      ]
-    }
-  ],
-  "kramdown-merge\nmarkdown-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        44,
-        77
-      ]
-    }
-  ],
-  "markdown-merge\nmarkly-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        45,
-        78
-      ]
-    }
-  ],
-  "markly-merge\nparslet-toml-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        46,
-        79
-      ]
-    }
-  ],
-  "parslet-toml-merge\nplain-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        47,
-        80
-      ]
-    }
-  ],
   "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
@@ -488,75 +335,12 @@
       ]
     }
   ],
-  "plain-merge\nprism-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        48,
-        81
-      ]
-    }
-  ],
   "prefix: \"RUBOCOP_LTS\",\npath_env: \"RUBOCOP_LTS_LOCAL\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         46,
         55
-      ]
-    }
-  ],
-  "prism-merge\npsych-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        49,
-        82
-      ]
-    }
-  ],
-  "psych-merge\nrbs-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        50,
-        83
-      ]
-    }
-  ],
-  "rbs-merge\nruby-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        51,
-        84
-      ]
-    }
-  ],
-  "ruby-merge\nrust-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        52,
-        85
-      ]
-    }
-  ],
-  "rust-merge\nsmorg-rb": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        53,
-        86
-      ]
-    }
-  ],
-  "smorg-rb\ntypescript-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        54,
-        87
       ]
     }
   ],
@@ -570,57 +354,12 @@
       ]
     }
   ],
-  "toml-merge\nyaml-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        56,
-        89
-      ]
-    }
-  ],
-  "tree_haver\nast-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        32,
-        65
-      ]
-    }
-  ],
-  "typescript-merge\ntoml-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        55,
-        88
-      ]
-    }
-  ],
   "vendor_gem_dir_env: \"VENDOR_GEM_DIR\",\ndebug_env: \"RUBOCOP_LTS_DEBUG\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         49,
         58
-      ]
-    }
-  ],
-  "yaml-merge\nzip-merge": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        57,
-        90
-      ]
-    }
-  ],
-  "zip-merge\nast-crispr": [
-    {
-      "file": "gemfiles/modular/templating_local.gemfile",
-      "lines": [
-        58,
-        91
       ]
     }
   ]
