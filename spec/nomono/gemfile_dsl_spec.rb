@@ -28,4 +28,21 @@ RSpec.describe Nomono::GemfileDsl do
       ["kettle-dev", {path: "/workspace/my/kettle-dev"}]
     ])
   end
+
+  it "evaluates normalized aliases into Gemfile gem(path:) calls" do
+    env = {
+      "KETTLE_DEV_DEV" => "/var/home/test/src/my",
+      "KETTLE_DEV_PATH_ALIASES" => "/var/home/test=/home/test"
+    }
+    allow(File).to receive(:realpath).and_call_original
+    allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+    allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+    allow(Nomono).to receive(:resolver).and_return(Nomono::Resolver.new(env: env, home: "/home/test"))
+
+    dsl.eval_nomono_gems(gems: %w[kettle-dev], prefix: "KETTLE_DEV")
+
+    expect(dsl.captured).to eq([
+      ["kettle-dev", {path: "/home/test/src/my/kettle-dev"}]
+    ])
+  end
 end

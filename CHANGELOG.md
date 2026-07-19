@@ -20,6 +20,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+- Added opt-in path alias normalization so local sibling paths can be rewritten
+  to a configured canonical spelling before Bundler writes them to lockfiles.
+
 ### Changed
 
 ### Deprecated
