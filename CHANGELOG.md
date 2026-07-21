@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.0.9] - 2026-07-21
+
+- TAG: [v1.0.9][1.0.9t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 12.50% documented
+
+### Added
+
 - Added opt-in path alias normalization so local sibling paths can be rewritten
   to a configured canonical spelling before Bundler writes them to lockfiles.
 
@@ -40,14 +59,6 @@ Please file a bug if you notice a violation of semantic versioning.
   omit JRuby and TruffleRuby jobs when project config declares MRI-only engines.
 - kettle-jem-template-20260720-005 - Generated README Support & Community rows
   now include a RubyForum help badge.
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [1.0.8] - 2026-07-13
 
@@ -197,7 +208,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.8...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.9...HEAD
+[1.0.9]: https://github.com/kettle-dev/nomono/compare/v1.0.8...v1.0.9
+[1.0.9t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.9
 [1.0.8]: https://github.com/kettle-dev/nomono/compare/v1.0.7...v1.0.8
 [1.0.8t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.8
 [1.0.7]: https://github.com/kettle-dev/nomono/compare/v1.0.6...v1.0.7

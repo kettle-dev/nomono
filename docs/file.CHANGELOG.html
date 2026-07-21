@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.0.8...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.0.9...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -83,6 +83,45 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 <h3 id="fixed">Fixed</h3>
 
 <h3 id="security">Security</h3>
+
+<h2 id="109---2026-07-21">
+<a href="https://github.com/kettle-dev/nomono/compare/v1.0.8...v1.0.9">1.0.9</a> - 2026-07-21</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.0.9">v1.0.9</a>
+</li>
+  <li>COVERAGE: 97.56% – 120/123 lines in 7 files</li>
+  <li>BRANCH COVERAGE: 86.67% – 39/45 branches in 7 files</li>
+  <li>12.50% documented</li>
+</ul>
+
+<h3 id="added-1">Added</h3>
+
+<ul>
+  <li>Added opt-in path alias normalization so local sibling paths can be rewritten<br>
+to a configured canonical spelling before Bundler writes them to lockfiles.</li>
+</ul>
+
+<h3 id="changed-1">Changed</h3>
+
+<ul>
+  <li>kettle-jem-template-20260716-001 - Shim gemspec manifests now include<br>
+<code>LICENSE.md</code> instead of nonexistent <code>LICENSE.txt</code>.</li>
+  <li>
+    <p>kettle-jem-template-20260716-002 - Generated gemspec manifests now ship fewer<br>
+repository-only files by default to reduce downstream distro packaging churn.</p>
+  </li>
+  <li>kettle-jem-template-20260720-001 - Generated READMEs can now render<br>
+template-managed corporate sponsor logos from project or family config.</li>
+  <li>kettle-jem-template-20260720-002 - Generated development Gemfiles now use the<br>
+released <code>tree_sitter_language_pack</code> gem 1.13.3 or newer by default.</li>
+  <li>kettle-jem-template-20260720-003 - Generated StructuredMerge Git diff driver<br>
+config now uses the installed <code>smorg-rb</code> Ruby driver name.</li>
+  <li>kettle-jem-template-20260720-004 - Generated multi-engine workflow files now<br>
+omit JRuby and TruffleRuby jobs when project config declares MRI-only engines.</li>
+  <li>kettle-jem-template-20260720-005 - Generated README Support &amp; Community rows<br>
+now include a RubyForum help badge.</li>
+</ul>
 
 <h2 id="108---2026-07-13">
 <a href="https://github.com/kettle-dev/nomono/compare/v1.0.7...v1.0.8">1.0.8</a> - 2026-07-13</h2>
@@ -145,13 +184,13 @@ remains the explicit Gemfile integration hook.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 
 <ul>
   <li>Added support for JRuby 10.1 and TruffleRuby 34.0.</li>
 </ul>
 
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 
 <ul>
   <li>Retemplated project metadata and CI/development automation with <code>kettle-jem</code> v7.0.0.</li>
@@ -161,7 +200,7 @@ remains the explicit Gemfile integration hook.</li>
 
 <ul>
   <li>Corrected OpenCollective funding metadata to use the <code>kettle-dev</code> collective.</li>
-  <li>Updated the default local workspace root from <code>$HOME/src/kettle-rb</code> to<br>
+  <li>Updated the default local workspace root from <code>$HOME/src/kettle-dev</code> to<br>
 <code>$HOME/src/my</code>.</li>
 </ul>
 
@@ -176,7 +215,7 @@ remains the explicit Gemfile integration hook.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 
 <ul>
   <li>Retemplated with the current kettle-jem template set, refreshing generated<br>
@@ -201,7 +240,7 @@ style workflow RBS check to load the signature environment.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 
 <ul>
   <li>Development tooling now resolves <code>kettle-dev</code> 2.2.3, <code>kettle-test</code> 2.0.5,<br>
@@ -231,14 +270,14 @@ GitHub organization.</p>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 
 <ul>
   <li>Added StructuredMerge git diff driver configuration and the incident response<br>
 plan from the current kettle-jem template.</li>
 </ul>
 
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 
 <ul>
   <li>Retemplated with the current kettle-jem template set, including the<br>
@@ -267,13 +306,13 @@ differences in <code>Hash#inspect</code> spacing.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 
 <ul>
   <li>Improved documentation of ENV variables and overrides in README.md</li>
 </ul>
 
-<h3 id="changed-5">Changed</h3>
+<h3 id="changed-6">Changed</h3>
 
 <ul>
   <li>Retemplated with the current kettle-jem template set.</li>
