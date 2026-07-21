@@ -373,6 +373,14 @@ PLATFORMS
   aarch64-linux
   aarch64-linux
   aarch64-linux
+  aarch64-linux
+  aarch64-linux
+  aarch64-linux
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-gnu
+  aarch64-linux-gnu
+  aarch64-linux-gnu
   aarch64-linux-gnu
   aarch64-linux-gnu
   aarch64-linux-gnu
@@ -381,6 +389,14 @@ PLATFORMS
   aarch64-linux-musl
   aarch64-linux-musl
   aarch64-linux-musl
+  aarch64-linux-musl
+  aarch64-linux-musl
+  aarch64-linux-musl
+  aarch64-linux-musl
+  arm64-darwin
+  arm64-darwin
+  arm64-darwin
+  arm64-darwin
   arm64-darwin
   arm64-darwin
   arm64-darwin
