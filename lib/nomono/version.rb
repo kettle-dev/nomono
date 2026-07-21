@@ -2,7 +2,7 @@
 
 module Nomono
   module Version
-    VERSION = "1.0.8"
+    VERSION = "1.0.9"
   end
   VERSION = Version::VERSION # Traditional Constant Location
 end
