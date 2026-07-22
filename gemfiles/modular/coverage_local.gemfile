@@ -3,7 +3,7 @@
 # Local path overrides for development.
 # Loaded by the associated non-local gemfile when KETTLE_DEV_DEV != "false".
 
-require_relative "../../lib/nomono/bundler"
+require "nomono/bundler"
 
 local_gems = %w[
   kettle-dev

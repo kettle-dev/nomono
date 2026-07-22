@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Local modular Gemfiles now load `nomono/bundler` with the normal Bundler
+  require path so RuboCop Gradual style checks pass under appraisal bundles.
+
 ### Security
 
 ## [1.1.0] - 2026-07-21

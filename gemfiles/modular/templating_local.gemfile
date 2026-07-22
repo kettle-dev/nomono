@@ -4,7 +4,7 @@
 # Loaded by the associated non-local gemfile when STRUCTUREDMERGE_DEV or KETTLE_DEV_DEV
 # is not "false".
 
-require_relative "../../lib/nomono/bundler"
+require "nomono/bundler"
 
 structuredmerge_local_gems = %w[
   tree_haver
