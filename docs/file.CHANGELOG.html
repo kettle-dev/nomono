@@ -84,8 +84,8 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 
 <h3 id="security">Security</h3>
 
-<h2 id="110---2026-07-21">
-<a href="https://github.com/kettle-dev/nomono/compare/v1.0.9...v1.1.0">1.1.0</a> - 2026-07-21</h2>
+<h2 id="110---2026-07-22">
+<a href="https://github.com/kettle-dev/nomono/compare/v1.0.9...v1.1.0">1.1.0</a> - 2026-07-22</h2>
 
 <ul>
   <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.1.0">v1.1.0</a>
@@ -135,6 +135,10 @@ Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified<br>
     <p>Addressed review feedback by keeping split license detail links pointed at<br>
 the source repository, keeping <code>tree_sitter_language_pack</code> in the templating<br>
 dependency path only, and regenerating YARD documentation.</p>
+  </li>
+  <li>
+    <p>Local modular Gemfiles now load <code>nomono/bundler</code> with the normal Bundler<br>
+require path so RuboCop Gradual style checks pass under appraisal bundles.</p>
   </li>
 </ul>
 

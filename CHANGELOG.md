@@ -28,12 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Local modular Gemfiles now load `nomono/bundler` with the normal Bundler
-  require path so RuboCop Gradual style checks pass under appraisal bundles.
-
 ### Security
 
-## [1.1.0] - 2026-07-21
+## [1.1.0] - 2026-07-22
 
 - TAG: [v1.1.0][1.1.0t]
 - COVERAGE: 97.56% -- 120/123 lines in 7 files
@@ -72,6 +69,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - Addressed review feedback by keeping split license detail links pointed at
   the source repository, keeping `tree_sitter_language_pack` in the templating
   dependency path only, and regenerating YARD documentation.
+
+- Local modular Gemfiles now load `nomono/bundler` with the normal Bundler
+  require path so RuboCop Gradual style checks pass under appraisal bundles.
 
 ## [1.0.8] - 2026-07-13
 
