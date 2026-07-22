@@ -37,19 +37,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
 - 12.50% documented
 
-### Fixed
-
-- Documented why `nomono` uses an explicit Gemfile loader instead of the
-  Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified
-  `nomono`'s own local Gemfiles to load the local Bundler integration directly.
-
-## [1.0.9] - 2026-07-21
-
-- TAG: [v1.0.9][1.0.9t]
-- COVERAGE: 97.56% -- 120/123 lines in 7 files
-- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
-- 12.50% documented
-
 ### Added
 
 - Added opt-in path alias normalization so local sibling paths can be rewritten
@@ -72,6 +59,12 @@ Please file a bug if you notice a violation of semantic versioning.
   omit JRuby and TruffleRuby jobs when project config declares MRI-only engines.
 - kettle-jem-template-20260720-005 - Generated README Support & Community rows
   now include a RubyForum help badge.
+
+### Fixed
+
+- Documented why `nomono` uses an explicit Gemfile loader instead of the
+  Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified
+  `nomono`'s own local Gemfiles to load the local Bundler integration directly.
 
 ## [1.0.8] - 2026-07-13
 
