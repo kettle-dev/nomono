@@ -455,6 +455,19 @@ and nomono owns the path normalization for sibling repositories. When<br>
 <code>KETTLE_DEV_DEV=false</code> or is unset, the modular local override is skipped and<br>
 Bundler resolves released gems normally.</p>
 
+<p><code>nomono</code> uses an explicit <code>require "nomono/bundler"</code> loader instead of the<br>
+Bundler plugin DSL. Bundler plugins are installed extensions for Bundler<br>
+commands, source handlers, and lifecycle hooks; <code>nomono</code> only needs to install<br>
+Gemfile macros while Bundler is evaluating a Gemfile. The root Gemfile should<br>
+declare the compatible <code>nomono</code> version, and modular local Gemfiles should fail<br>
+normally if that loader is unavailable or incompatible.</p>
+
+<p><code>nomono</code> also avoids RubyGems plugin autoload hooks for this path. Those hooks<br>
+are appropriate for gems that must globally patch RubyGems or Bundler before<br>
+dependency resolution can work. Local sibling overrides do not need cold-boot<br>
+global patches: the root Gemfile installs <code>nomono</code>, and the ENV-gated modular<br>
+Gemfile explicitly loads the macros only when it needs them.</p>
+
 <h2 id="-security">🔐 Security</h2>
 
 <p>See <a href="https://github.com/kettle-dev/nomono/blob/main/SECURITY.md">SECURITY.md</a>.</p>
