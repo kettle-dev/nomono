@@ -28,6 +28,10 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Documented why `nomono` uses an explicit Gemfile loader instead of the
+  Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified
+  `nomono`'s own local Gemfiles to load the local Bundler integration directly.
+
 ### Security
 
 ## [1.0.9] - 2026-07-21
