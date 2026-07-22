@@ -311,8 +311,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        50,
-        59
+        28,
+        37
       ]
     }
   ],
@@ -340,8 +340,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        47,
-        56
+        25,
+        34
       ]
     }
   ],
@@ -349,8 +349,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        46,
-        55
+        24,
+        33
       ]
     }
   ],
@@ -368,8 +368,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        49,
-        58
+        27,
+        36
       ]
     }
   ]

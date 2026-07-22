@@ -18,9 +18,6 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 # Include dependencies from nomono.gemspec
 gemspec
 
-# Use released TSLP with the Ruby ABI platform-gem fix.
-gem "tree_sitter_language_pack", "~> 1.13", ">= 1.13.3"
-
 # Templating (env-switched: STRUCTUREDMERGE_DEV=/path/to/structuredmerge/ruby/gems for local paths)
 eval_gemfile "gemfiles/modular/templating.gemfile" if ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
 
