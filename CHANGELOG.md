@@ -20,9 +20,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- Added opt-in path alias normalization so local sibling paths can be rewritten
-  to a configured canonical spelling before Bundler writes them to lockfiles.
-
 ### Changed
 
 ### Deprecated
@@ -31,7 +28,50 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Local modular Gemfiles now load `nomono/bundler` with the normal Bundler
+  require path so RuboCop Gradual style checks pass under appraisal bundles.
+
 ### Security
+
+## [1.1.0] - 2026-07-21
+
+- TAG: [v1.1.0][1.1.0t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 12.50% documented
+
+### Added
+
+- Added opt-in path alias normalization so local sibling paths can be rewritten
+  to a configured canonical spelling before Bundler writes them to lockfiles.
+
+### Changed
+
+- kettle-jem-template-20260716-001 - Shim gemspec manifests now include
+  `LICENSE.md` instead of nonexistent `LICENSE.txt`.
+- kettle-jem-template-20260716-002 - Generated gemspec manifests now ship fewer
+  repository-only files by default to reduce downstream distro packaging churn.
+
+- kettle-jem-template-20260720-001 - Generated READMEs can now render
+  template-managed corporate sponsor logos from project or family config.
+- kettle-jem-template-20260720-002 - Generated development Gemfiles now use the
+  released `tree_sitter_language_pack` gem 1.13.3 or newer by default.
+- kettle-jem-template-20260720-003 - Generated StructuredMerge Git diff driver
+  config now uses the installed `smorg-rb` Ruby driver name.
+- kettle-jem-template-20260720-004 - Generated multi-engine workflow files now
+  omit JRuby and TruffleRuby jobs when project config declares MRI-only engines.
+- kettle-jem-template-20260720-005 - Generated README Support & Community rows
+  now include a RubyForum help badge.
+
+### Fixed
+
+- Documented why `nomono` uses an explicit Gemfile loader instead of the
+  Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified
+  `nomono`'s own local Gemfiles to load the local Bundler integration directly.
+
+- Addressed review feedback by keeping split license detail links pointed at
+  the source repository, keeping `tree_sitter_language_pack` in the templating
+  dependency path only, and regenerating YARD documentation.
 
 ## [1.0.8] - 2026-07-13
 
@@ -181,7 +221,11 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.0.8...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/kettle-dev/nomono/compare/v1.0.9...v1.1.0
+[1.1.0t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.0
+[1.0.9]: https://github.com/kettle-dev/nomono/compare/v1.0.8...v1.0.9
+[1.0.9t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.9
 [1.0.8]: https://github.com/kettle-dev/nomono/compare/v1.0.7...v1.0.8
 [1.0.8t]: https://github.com/kettle-dev/nomono/releases/tag/v1.0.8
 [1.0.7]: https://github.com/kettle-dev/nomono/compare/v1.0.6...v1.0.7

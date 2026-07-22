@@ -21,8 +21,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        500,
-        671
+        502,
+        673
       ]
     }
   ],
@@ -30,8 +30,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        499,
-        670
+        501,
+        672
       ]
     }
   ],
@@ -39,8 +39,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        495,
-        666
+        497,
+        668
       ]
     }
   ],
@@ -75,8 +75,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        498,
-        669
+        500,
+        671
       ]
     }
   ],
@@ -84,8 +84,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        488,
-        659
+        490,
+        661
       ]
     }
   ],
@@ -93,8 +93,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        491,
-        662
+        493,
+        664
       ]
     }
   ],
@@ -102,8 +102,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        494,
-        665
+        496,
+        667
       ]
     }
   ],
@@ -228,8 +228,8 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        487,
-        658
+        489,
+        660
       ]
     }
   ],
@@ -291,9 +291,9 @@
     {
       "file": ".github/workflows/dep-heads.yml",
       "lines": [
-        44,
-        51,
-        58
+        43,
+        97,
+        151
       ]
     }
   ],
@@ -302,8 +302,8 @@
       "file": ".github/workflows/heads.yml",
       "lines": [
         43,
-        50,
-        57
+        104,
+        162
       ]
     }
   ],
@@ -311,25 +311,28 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        42,
-        51
+        28,
+        37
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\n# Run directly from the generated appraisal Gemfile so setup-ruby": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        44,
+        98,
+        152
       ]
     }
   ],
   "exec_cmd: \"kettle-test\"\nrubygems: default": [
     {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        52,
-        59
-      ]
-    },
-    {
       "file": ".github/workflows/heads.yml",
       "lines": [
         44,
-        51,
-        58
+        105,
+        163
       ]
     }
   ],
@@ -337,8 +340,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        39,
-        48
+        25,
+        34
       ]
     }
   ],
@@ -346,8 +349,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        38,
-        47
+        24,
+        33
       ]
     }
   ],
@@ -355,9 +358,9 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        476,
-        479,
-        482
+        478,
+        481,
+        484
       ]
     }
   ],
@@ -365,8 +368,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        41,
-        50
+        27,
+        36
       ]
     }
   ]

@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.9.44
+    &mdash; Documentation by YARD 0.9.45
   
 </title>
 
@@ -139,13 +139,13 @@ Use <code>require "nomono/bundler"</code> from Gemfiles or modular Gemfiles; thi
     <tr>
       <td>Support &amp; Community</td>
       <td>
-<a href="https://app.daily.dev/squads/rubyfriends"><img src="https://img.shields.io/badge/daily.dev-%F0%9F%92%8E_Ruby_Friends-0A0A0A?style=for-the-badge&amp;logo=dailydotdev&amp;logoColor=white" alt="Join Me on Daily.dev's RubyFriends"></a> <a href="https://discord.gg/3qme4XHNKN"><img src="https://img.shields.io/discord/1373797679469170758?style=for-the-badge&amp;logo=discord" alt="Live Chat on Discord"></a> <a href="https://www.upwork.com/freelancers/~014942e9b056abdf86?mp_source=share"><img src="https://img.shields.io/badge/UpWork-13544E?style=for-the-badge&amp;logo=Upwork&amp;logoColor=white" alt="Get help from me on Upwork"></a> <a href="https://www.codementor.io/peterboling?utm_source=github&amp;utm_medium=button&amp;utm_term=peterboling&amp;utm_campaign=github"><img src="https://img.shields.io/badge/CodeMentor-Get_Help-1abc9c?style=for-the-badge&amp;logo=CodeMentor&amp;logoColor=white" alt="Get help from me on Codementor"></a>
+<a href="https://app.daily.dev/squads/rubyfriends"><img src="https://img.shields.io/badge/daily.dev-%F0%9F%92%8E_Ruby_Friends-0A0A0A?style=for-the-badge&amp;logo=dailydotdev&amp;logoColor=white" alt="Join Me on Daily.dev's RubyFriends"></a> <a href="https://www.rubyforum.org/c/help/8"><img src="https://img.shields.io/badge/RubyForum-Help-CC342D?style=for-the-badge&amp;logo=ruby&amp;logoColor=white" alt="Get help from RubyForum"></a> <a href="https://discord.gg/3qme4XHNKN"><img src="https://img.shields.io/discord/1373797679469170758?style=for-the-badge&amp;logo=discord" alt="Live Chat on Discord"></a> <a href="https://www.upwork.com/freelancers/~014942e9b056abdf86?mp_source=share"><img src="https://img.shields.io/badge/UpWork-13544E?style=for-the-badge&amp;logo=Upwork&amp;logoColor=white" alt="Get help from me on Upwork"></a> <a href="https://www.codementor.io/peterboling?utm_source=github&amp;utm_medium=button&amp;utm_term=peterboling&amp;utm_campaign=github"><img src="https://img.shields.io/badge/CodeMentor-Get_Help-1abc9c?style=for-the-badge&amp;logo=CodeMentor&amp;logoColor=white" alt="Get help from me on Codementor"></a>
 </td>
     </tr>
     <tr>
       <td>Source</td>
       <td>
-<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=Github&amp;logoColor=green" alt="Source on Github.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.089-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
+<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=GitHub&amp;logoColor=green" alt="Source on GitHub.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.123-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
 </td>
     </tr>
     <tr>
@@ -385,21 +385,23 @@ not practical for the current toolchain.</p>
   <li>
 <code>NOMONO_GEMS_VENDOR_GEM_DIR</code> (or legacy <code>VENDOR_GEM_DIR</code>) is the base path of the vendor directory used for gems listed in <code>NOMONO_GEMS_VENDORED_GEMS</code>. Defaults to <code>$workspace_root/vendor</code>. This is <strong>not</strong> an alternative form of the workspace root — it only affects vendored gems.</li>
   <li>
+<code>NOMONO_GEMS_PATH_ALIASES</code> (or global fallback <code>NOMONO_PATH_ALIASES</code>) is a comma-delimited list of <code>source=canonical</code> absolute path aliases. Each pair must resolve to the same real directory. Matching local gem paths are rewritten to the canonical spelling before Bundler receives them, preventing <code>Gemfile.lock</code> churn from equivalent paths such as <code>/var/home/...</code> and <code>/home/...</code>.</li>
+  <li>
 <code>NOMONO_GEMS_DEBUG</code> enables debug output from nomono.</li>
 </ul>
 
 <h3 id="examples">Examples</h3>
 
-<p>For example, in the <code>kettle-dev</code> family of gems, which nomono is a part of, the parameters used are <code>prefix: "KETTLE_RB"</code>, <code>path_env: "KETTLE_RB_DEV"</code>.<br>
+<p>For example, in the <code>kettle-dev</code> family of gems, which nomono is a part of, the parameters used are <code>prefix: "KETTLE_DEV"</code>, <code>path_env: "KETTLE_DEV_DEV"</code>.<br>
 This means that the following is true:</p>
 
 <ul>
   <li>
-<code>KETTLE_RB_DEV=false</code> (or unset) — released gems from configured gem server (CI / single-gem development default)</li>
+<code>KETTLE_DEV_DEV=false</code> (or unset) — released gems from configured gem server (CI / single-gem development default)</li>
   <li>
-<code>KETTLE_RB_DEV=true</code> — local sibling gems from <code>$HOME/src/kettle-dev/&lt;gem&gt;</code> (recommended for full-workspace development)</li>
+<code>KETTLE_DEV_DEV=true</code> — local sibling gems from <code>$HOME/src/kettle-dev/&lt;gem&gt;</code> (recommended for full-workspace development)</li>
   <li>
-<code>KETTLE_RB_DEV=/custom/path</code> — local sibling gems from <code>/custom/path/&lt;gem&gt;</code> (non-standard workspace layout only)</li>
+<code>KETTLE_DEV_DEV=/custom/path</code> — local sibling gems from <code>/custom/path/&lt;gem&gt;</code> (non-standard workspace layout only)</li>
 </ul>
 
 <p>You can override the env variable names via options. Here is an example for use with rubocop-lts gems:</p>
@@ -422,10 +424,10 @@ when they are enabled:</p>
 
 <pre class="code language-ruby"><code class="language-ruby">source &quot;https://gem.coop&quot;
 
-if ENV.fetch(&quot;KETTLE_RB_DEV&quot;, &quot;false&quot;).casecmp(&quot;false&quot;).zero?
+if ENV.fetch(&quot;KETTLE_DEV_DEV&quot;, &quot;false&quot;).casecmp(&quot;false&quot;).zero?
   gem &quot;kettle-dev&quot;, &quot;~&gt; 2.2&quot;, &quot;&gt;= 2.2.15&quot;
   gem &quot;kettle-test&quot;, &quot;~&gt; 2.0&quot;, &quot;&gt;= 2.0.6&quot;
-  gem &quot;kettle-soup-cover&quot;, &quot;~&gt; 3.0.a&quot;, &quot;&gt;= 3.0.0.rc4&quot;
+  gem &quot;kettle-soup-cover&quot;, &quot;~&gt; 3.0&quot;, &quot;&gt;= 3.0.1&quot;
 else
   eval_gemfile &quot;gemfiles/modular/local.gemfile&quot;
 end
@@ -437,8 +439,11 @@ end
 
 eval_nomono_gems(
   gems: %w[kettle-dev kettle-test kettle-soup-cover],
-  prefix: &quot;KETTLE_RB&quot;,
-  path_env: &quot;KETTLE_RB_DEV&quot;,
+  prefix: &quot;KETTLE_DEV&quot;,
+  path_env: &quot;KETTLE_DEV_DEV&quot;,
+  path_aliases: {
+    &quot;/var/home/pboling&quot; =&gt; &quot;/home/pboling&quot;
+  },
   vendored_gems_env: &quot;VENDORED_GEMS&quot;,
   vendor_gem_dir_env: &quot;VENDOR_GEM_DIR&quot;,
   debug_env: &quot;KETTLE_DEV_DEBUG&quot;
@@ -447,8 +452,21 @@ eval_nomono_gems(
 
 <p>This is the pattern generated by <code>kettle-jem</code>: the Gemfile remains readable,<br>
 and nomono owns the path normalization for sibling repositories. When<br>
-<code>KETTLE_RB_DEV=false</code> or is unset, the modular local override is skipped and<br>
+<code>KETTLE_DEV_DEV=false</code> or is unset, the modular local override is skipped and<br>
 Bundler resolves released gems normally.</p>
+
+<p><code>nomono</code> uses an explicit <code>require "nomono/bundler"</code> loader instead of the<br>
+Bundler plugin DSL. Bundler plugins are installed extensions for Bundler<br>
+commands, source handlers, and lifecycle hooks; <code>nomono</code> only needs to install<br>
+Gemfile macros while Bundler is evaluating a Gemfile. The root Gemfile should<br>
+declare the compatible <code>nomono</code> version, and modular local Gemfiles should fail<br>
+normally if that loader is unavailable or incompatible.</p>
+
+<p><code>nomono</code> also avoids RubyGems plugin autoload hooks for this path. Those hooks<br>
+are appropriate for gems that must globally patch RubyGems or Bundler before<br>
+dependency resolution can work. Local sibling overrides do not need cold-boot<br>
+global patches: the root Gemfile installs <code>nomono</code>, and the ENV-gated modular<br>
+Gemfile explicitly loads the macros only when it needs them.</p>
 
 <h2 id="-security">🔐 Security</h2>
 
@@ -536,7 +554,7 @@ read this article from the creator of SemVer:</p>
 
 <h2 id="-license">📄 License</h2>
 
-<p>The gem is available under the following license: <a href="AGPL-3.0-only.md">AGPL-3.0-only</a>.<br>
+<p>The gem is available under the following license: <a href="https://github.com/kettle-dev/nomono/blob/main/AGPL-3.0-only.md">AGPL-3.0-only</a>.<br>
 See <a href="LICENSE.md">LICENSE.md</a> for details.</p>
 
 <p>If none of the available licenses suit your use case, please <a href="mailto:floss@galtzo.com">contact us</a> to discuss a custom commercial license.</p>
@@ -590,9 +608,9 @@ Please consider sponsoring me or the project.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jul 13 20:32:22 2026 by
+  Generated on Tue Jul 21 20:48:54 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.44 (ruby-4.0.5).
+  0.9.45 (ruby-4.0.6).
 </div>
 
     </div>
