@@ -28,10 +28,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Addressed review feedback by keeping split license detail links pointed at
-  the source repository, keeping `tree_sitter_language_pack` in the templating
-  dependency path only, and regenerating YARD documentation.
-
 ### Security
 
 ## [1.1.0] - 2026-07-21
@@ -69,6 +65,10 @@ Please file a bug if you notice a violation of semantic versioning.
 - Documented why `nomono` uses an explicit Gemfile loader instead of the
   Bundler plugin DSL or RubyGems plugin autoload hooks, and simplified
   `nomono`'s own local Gemfiles to load the local Bundler integration directly.
+
+- Addressed review feedback by keeping split license detail links pointed at
+  the source repository, keeping `tree_sitter_language_pack` in the templating
+  dependency path only, and regenerating YARD documentation.
 
 ## [1.0.8] - 2026-07-13
 
