@@ -17,33 +17,6 @@
       ]
     }
   ],
-  "#       strategy: merge\n#       file_type: ruby": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        502,
-        673
-      ]
-    }
-  ],
-  "#     commit-msg:\n#       strategy: merge": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        501,
-        672
-      ]
-    }
-  ],
-  "#     pboling.pem:\n#       strategy: raw_copy": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        497,
-        668
-      ]
-    }
-  ],
   "#   - \"note:*\"\n#   - \"setup*\"": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
@@ -68,42 +41,6 @@
       "lines": [
         229,
         270
-      ]
-    }
-  ],
-  "#   .git-hooks:\n#     commit-msg:": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        500,
-        671
-      ]
-    }
-  ],
-  "#   README.md:\n#     strategy: accept_template": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        490,
-        661
-      ]
-    }
-  ],
-  "#   SECURITY.md:\n#     strategy: keep_destination": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        493,
-        664
-      ]
-    }
-  ],
-  "#   certs:\n#     pboling.pem:": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        496,
-        667
       ]
     }
   ],
@@ -224,15 +161,6 @@
       ]
     }
   ],
-  "# files:\n#   README.md:": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        489,
-        660
-      ]
-    }
-  ],
   "# framework_matrix (only used when preset: framework):\n#   dimension   — framework name used in the matrix key and display": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
@@ -316,6 +244,15 @@
       ]
     }
   ],
+  "eval_nomono_gems(\ngems: local_gems_to_eval,": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        20,
+        30
+      ]
+    }
+  ],
   "exec_cmd: \"kettle-test\"\n# Run directly from the generated appraisal Gemfile so setup-ruby": [
     {
       "file": ".github/workflows/dep-heads.yml",
@@ -336,12 +273,39 @@
       ]
     }
   ],
+  "gems: local_gems_to_eval,\nprefix: \"KETTLE_DEV\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        21,
+        31
+      ]
+    }
+  ],
+  "path_env: \"KETTLE_DEV_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        23,
+        33
+      ]
+    }
+  ],
   "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         25,
         34
+      ]
+    }
+  ],
+  "prefix: \"KETTLE_DEV\",\npath_env: \"KETTLE_DEV_DEV\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        22,
+        32
       ]
     }
   ],
