@@ -248,8 +248,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        20,
-        30
+        21,
+        31
       ]
     }
   ],
@@ -277,8 +277,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        21,
-        31
+        22,
+        32
       ]
     }
   ],
@@ -286,8 +286,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        23,
-        33
+        24,
+        34
       ]
     }
   ],
@@ -304,8 +304,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        22,
-        32
+        23,
+        33
       ]
     }
   ],

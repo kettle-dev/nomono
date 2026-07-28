@@ -7,6 +7,7 @@ require "nomono/bundler"
 
 local_gems = %w[
   kettle-dev
+  kettle-family
   kettle-test
   kettle-soup-cover
   kettle-drift
