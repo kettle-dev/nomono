@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.1] - 2026-07-28
+
+- TAG: [v1.1.1][1.1.1t]
+- COVERAGE: 94.31% -- 116/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Added
+
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
   configuration and documentation dependencies so documentation issues fail
   before generated docs are refreshed.
@@ -39,10 +58,6 @@ Please file a bug if you notice a violation of semantic versioning.
   setup-ruby-flash planning and can prepare appraisal-only jobs without
   installing the main Gemfile bundle.
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - kettle-jem-template-20260726-002 - Generated version files now document their
@@ -54,8 +69,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260728-002 - Generated RuboCop configs now ignore the
   same `gemfiles/vendor/bundle` tree as `.gitignore`, so vendored dependency
   installs are not reported as project lint debt.
-
-### Security
 
 ## [1.1.0] - 2026-07-22
 
@@ -248,7 +261,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/kettle-dev/nomono/compare/v1.1.0...v1.1.1
+[1.1.1t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.1
 [1.1.0]: https://github.com/kettle-dev/nomono/compare/v1.0.9...v1.1.0
 [1.1.0t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.0
 [1.0.9]: https://github.com/kettle-dev/nomono/compare/v1.0.8...v1.0.9
