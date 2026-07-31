@@ -20,15 +20,28 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- kettle-jem-template-20260729-005 - Gemspec metadata now publishes this
-  project's RubyForum tag as `mailing_list_uri`, and support docs link to the
-  tagged RubyForum community alongside Discord.
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.2] - 2026-07-31
+
+- TAG: [v1.1.2][1.1.2t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Added
+
+- kettle-jem-template-20260729-005 - Gemspec metadata now publishes this
+  project's RubyForum tag as `mailing_list_uri`, and support docs link to the
+  tagged RubyForum community alongside Discord.
 
 ### Fixed
 
@@ -54,8 +67,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260730-001 - Gemspec package file enumeration now runs
   relative to the gemspec directory, so release package contents stay correct
   even when the gemspec is loaded from another working directory.
-
-### Security
 
 ## [1.1.1] - 2026-07-28
 
@@ -288,7 +299,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/kettle-dev/nomono/compare/v1.1.1...v1.1.2
+[1.1.2t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.2
 [1.1.1]: https://github.com/kettle-dev/nomono/compare/v1.1.0...v1.1.1
 [1.1.1t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.1
 [1.1.0]: https://github.com/kettle-dev/nomono/compare/v1.0.9...v1.1.0
