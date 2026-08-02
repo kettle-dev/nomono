@@ -3,12 +3,21 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        45,
-        54
+        44,
+        53
       ]
     }
   ],
   "eval_nomono_gems(\ngems: local_gems_to_eval,": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        37,
+        47
+      ]
+    }
+  ],
+  "gems: local_gems_to_eval,\nprefix: \"KETTLE_DEV\",": [
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
@@ -17,34 +26,7 @@
       ]
     }
   ],
-  "gems: local_gems_to_eval,\nprefix: \"KETTLE_DEV\",": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        39,
-        49
-      ]
-    }
-  ],
   "path_env: \"KETTLE_DEV_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        41,
-        51
-      ]
-    }
-  ],
-  "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
-    {
-      "file": "gemfiles/modular/style_local.gemfile",
-      "lines": [
-        42,
-        51
-      ]
-    }
-  ],
-  "prefix: \"KETTLE_DEV\",\npath_env: \"KETTLE_DEV_DEV\",": [
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
@@ -53,7 +35,7 @@
       ]
     }
   ],
-  "prefix: \"RUBOCOP_LTS\",\npath_env: \"RUBOCOP_LTS_LOCAL\",": [
+  "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
@@ -62,13 +44,31 @@
       ]
     }
   ],
+  "prefix: \"KETTLE_DEV\",\npath_env: \"KETTLE_DEV_DEV\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        39,
+        49
+      ]
+    }
+  ],
+  "prefix: \"RUBOCOP_LTS\",\npath_env: \"RUBOCOP_LTS_LOCAL\",": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        40,
+        49
+      ]
+    }
+  ],
   "strategy: merge\nrecipe: .kettle-jem/recipes/nomono_local_gemfile.yml": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        416,
-        419,
-        422
+        435,
+        438,
+        441
       ]
     }
   ],
@@ -76,8 +76,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        44,
-        53
+        43,
+        52
       ]
     }
   ]
