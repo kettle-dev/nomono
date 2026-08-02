@@ -3,8 +3,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        44,
-        53
+        48,
+        57
       ]
     }
   ],
@@ -12,8 +12,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        37,
-        47
+        41,
+        51
       ]
     }
   ],
@@ -21,8 +21,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        38,
-        48
+        42,
+        52
       ]
     }
   ],
@@ -30,8 +30,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        40,
-        50
+        44,
+        54
       ]
     }
   ],
@@ -39,8 +39,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        41,
-        50
+        45,
+        54
       ]
     }
   ],
@@ -48,8 +48,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        39,
-        49
+        43,
+        53
       ]
     }
   ],
@@ -57,8 +57,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        40,
-        49
+        44,
+        53
       ]
     }
   ],
@@ -76,8 +76,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        43,
-        52
+        47,
+        56
       ]
     }
   ]
