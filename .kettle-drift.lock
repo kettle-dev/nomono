@@ -1,279 +1,14 @@
 {
-  "#                       \"ar-{version}.x\"      → gemfiles/ar-7.0.x\n#                       \"rails_{version}\"      → gemfiles/rails_7_0.gemfile": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        171,
-        204
-      ]
-    }
-  ],
-  "#                     Examples:\n#                       \"ar-{version}.x\"      → gemfiles/ar-7.0.x": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        170,
-        203
-      ]
-    }
-  ],
-  "#   - \"note:*\"\n#   - \"setup*\"": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        258,
-        299
-      ]
-    }
-  ],
-  "#   - basic usage\n#   - usage": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        250,
-        291
-      ]
-    }
-  ],
-  "#   - usage\n#   - summary": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        251,
-        292
-      ]
-    }
-  ],
-  "#   dimension   — framework name used in the matrix key and display\n#                 (e.g. activerecord, rails, actionmailer)": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        156,
-        196
-      ]
-    }
-  ],
-  "#   framework    — Ruby × framework-version matrix\n#   legacy-compat — supported / unsupported / ancient workflow split": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        152,
-        192
-      ]
-    }
-  ],
-  "#   howto: basic usage\n#   options: configuration": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        265,
-        306
-      ]
-    }
-  ],
-  "#   modern       — Ruby-only matrix (default when absent)\n#   framework    — Ruby × framework-version matrix": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        151,
-        191
-      ]
-    }
-  ],
-  "#   summary → synopsis, usage → basic usage,\n#   configuration options → configuration, setup → basic usage": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        244,
-        285
-      ]
-    }
-  ],
-  "# ActiveRecord, ActiveSupport, etc.), this section configures how\n# kettle-jem generates the CI matrix strategy and gemfile references.": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        147,
-        187
-      ]
-    }
-  ],
-  "# Built-in aliases (destination → template):\n#   summary → synopsis, usage → basic usage,": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        243,
-        284
-      ]
-    }
-  ],
-  "# Custom section aliases (destination heading → canonical template heading).\n# Merged with built-in aliases above.": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        261,
-        302
-      ]
-    }
-  ],
-  "# Framework matrix workflows.\n# When your gem tests against multiple versions of a framework (Rails,": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        145,
-        185
-      ]
-    }
-  ],
-  "# Glob patterns for additional sections to preserve (e.g. Note:* headings).\n# Default when absent: [\"note:*\"]": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        254,
-        295
-      ]
-    }
-  ],
-  "# Sections to preserve from the destination README during template merging.\n# These section headings (case-insensitive) will keep the destination body": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        236,
-        277
-      ]
-    }
-  ],
-  "# These section headings (case-insensitive) will keep the destination body\n# instead of being overwritten by the template. Default when absent:": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        237,
-        278
-      ]
-    }
-  ],
-  "# When your gem tests against multiple versions of a framework (Rails,\n# ActiveRecord, ActiveSupport, etc.), this section configures how": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        146,
-        186
-      ]
-    }
-  ],
-  "# framework_matrix (only used when preset: framework):\n#   dimension   — framework name used in the matrix key and display": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        155,
-        195
-      ]
-    }
-  ],
-  "# instead of being overwritten by the template. Default when absent:\n#   - synopsis": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        238,
-        279
-      ]
-    }
-  ],
-  "# preserve_patterns:\n#   - \"note:*\"": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        257,
-        298
-      ]
-    }
-  ],
-  "# preserve_sections:\n#   - synopsis": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        247,
-        288
-      ]
-    }
-  ],
-  "# preset: controls overall workflow strategy\n#   modern       — Ruby-only matrix (default when absent)": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        150,
-        190
-      ]
-    }
-  ],
-  "# section_aliases:\n#   howto: basic usage": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        264,
-        305
-      ]
-    }
-  ],
-  "appraisal: \"dep-heads\"\nexec_cmd: \"kettle-test\"": [
-    {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        43,
-        102,
-        161
-      ]
-    }
-  ],
-  "appraisal: \"head\"\nexec_cmd: \"kettle-test\"": [
-    {
-      "file": ".github/workflows/heads.yml",
-      "lines": [
-        43,
-        106,
-        166
-      ]
-    }
-  ],
   "debug_env: \"RUBOCOP_LTS_DEBUG\",\nroot: [\"src\", \"rubocop-lts\"]": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        44,
-        53
+        45,
+        54
       ]
     }
   ],
   "eval_nomono_gems(\ngems: local_gems_to_eval,": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        37,
-        47
-      ]
-    }
-  ],
-  "exec_cmd: \"kettle-test\"\n# Run directly from the generated appraisal Gemfile so setup-ruby": [
-    {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        44,
-        103,
-        162
-      ]
-    }
-  ],
-  "exec_cmd: \"kettle-test\"\nrubygems: default": [
-    {
-      "file": ".github/workflows/heads.yml",
-      "lines": [
-        44,
-        107,
-        167
-      ]
-    }
-  ],
-  "gems: local_gems_to_eval,\nprefix: \"KETTLE_DEV\",": [
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
@@ -282,43 +17,7 @@
       ]
     }
   ],
-  "if: ${{ !env.ACT }}\nuses: appraisal-rb/setup-ruby-flash@b22cb587431e9611d9e0a624a43872e2bbfbcd66 # v2.0": [
-    {
-      "file": ".github/workflows/dep-heads.yml",
-      "lines": [
-        63,
-        122,
-        182
-      ]
-    },
-    {
-      "file": ".github/workflows/heads.yml",
-      "lines": [
-        56,
-        119,
-        179
-      ]
-    }
-  ],
-  "path_env: \"KETTLE_DEV_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
-    {
-      "file": "gemfiles/modular/coverage_local.gemfile",
-      "lines": [
-        40,
-        50
-      ]
-    }
-  ],
-  "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
-    {
-      "file": "gemfiles/modular/style_local.gemfile",
-      "lines": [
-        41,
-        50
-      ]
-    }
-  ],
-  "prefix: \"KETTLE_DEV\",\npath_env: \"KETTLE_DEV_DEV\",": [
+  "gems: local_gems_to_eval,\nprefix: \"KETTLE_DEV\",": [
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
@@ -327,12 +26,39 @@
       ]
     }
   ],
+  "path_env: \"KETTLE_DEV_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        41,
+        51
+      ]
+    }
+  ],
+  "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        42,
+        51
+      ]
+    }
+  ],
+  "prefix: \"KETTLE_DEV\",\npath_env: \"KETTLE_DEV_DEV\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        40,
+        50
+      ]
+    }
+  ],
   "prefix: \"RUBOCOP_LTS\",\npath_env: \"RUBOCOP_LTS_LOCAL\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        40,
-        49
+        41,
+        50
       ]
     }
   ],
@@ -340,9 +66,9 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        500,
-        503,
-        506
+        416,
+        419,
+        422
       ]
     }
   ],
@@ -350,8 +76,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        43,
-        52
+        44,
+        53
       ]
     }
   ]

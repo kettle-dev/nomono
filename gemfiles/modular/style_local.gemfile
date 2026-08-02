@@ -24,6 +24,7 @@ end
 Kernel.send(:gem, "nomono", *nomono_activation_requirements)
 require "nomono/bundler"
 
+
 local_gems = %w[
   rubocop-lts
   rubocop-lts-rspec
