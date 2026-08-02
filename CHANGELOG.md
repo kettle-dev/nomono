@@ -22,12 +22,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
-- kettle-jem-template-20260801-001 - Generated README gem dashboard links now
-  use ClickGems instead of BestGems.
-
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.3] - 2026-08-01
+
+- TAG: [v1.1.3][1.1.3t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Changed
+
+- kettle-jem-template-20260801-001 - Generated README gem dashboard links now
+  use ClickGems instead of BestGems.
 
 ### Fixed
 
@@ -40,8 +53,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - kettle-jem-template-20260801-004 - Generated organization README logos now
   use GitHub's stable organization avatar endpoint instead of assuming a
   matching Galtzo-hosted asset exists.
-
-### Security
 
 ## [1.1.2] - 2026-07-31
 
@@ -312,7 +323,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.2...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.3...HEAD
+[1.1.3]: https://github.com/kettle-dev/nomono/compare/v1.1.2...v1.1.3
+[1.1.3t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.3
 [1.1.2]: https://github.com/kettle-dev/nomono/compare/v1.1.1...v1.1.2
 [1.1.2t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.2
 [1.1.1]: https://github.com/kettle-dev/nomono/compare/v1.1.0...v1.1.1
