@@ -28,10 +28,19 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [1.1.4] - 2026-08-02
+
+- TAG: [v1.1.4][1.1.4t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Fixed
+
 - kettle-jem-template-20260802-001 - Devcontainer JSON files now merge as JSONC,
   preserving comments and trailing commas during template updates.
-
-### Security
 
 ## [1.1.3] - 2026-08-01
 
@@ -310,7 +319,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.3...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.4...HEAD
+[1.1.4]: https://github.com/kettle-dev/nomono/compare/v1.1.3...v1.1.4
+[1.1.4t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.4
 [1.1.3]: https://github.com/kettle-dev/nomono/compare/v1.1.2...v1.1.3
 [1.1.3t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.3
 [1.1.2]: https://github.com/kettle-dev/nomono/compare/v1.1.1...v1.1.2
