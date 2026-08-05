@@ -2,7 +2,7 @@
 version: 1
 template_state:
   version: 7.1.0
-  applied_at: '2026-08-04'
+  applied_at: '2026-08-05'
   changelog_replay:
     last_entry_key: kettle-jem-template-20260802-001
     last_entry_date: '2026-08-02'
@@ -951,14 +951,14 @@ files:
     recipe: template_source_application_lib_nomono_version_rb
     action: write
     dest_sha256: '08fb6bf0feca33039492b12fea5b488f3b6ca7b27a81b1e99073cf89d0d64401'
-    input_fingerprint: 38e2a0c9dc4be32e2a8501fe6539c0d5ce3dd58f5f7d3afd1002a1a2e1c40963
+    input_fingerprint: 5f7fb7da9a6d0452f2291028e0af4a76f8dd853ac6c5b4250938f3b827d66013
     template_sources:
     - lib/gem/version.rb.example
   lib/nomono/version_gem.rb:
     recipe: template_source_application_lib_nomono_version_gem_rb
     action: write
     dest_sha256: ba52e6f1bac37d0fdf59ea7fd09b54d08c91e800125f7f4485744792736edf2b
-    input_fingerprint: 3527e7134e4a696750adcb283d7ebd837e761d4d7d2ba5a817ac958a5c60a83d
+    input_fingerprint: 47700acc656dc9772e7c97d6e56241b302342295f2483b867ac57ee02e2c4933
     template_sources:
     - lib/gem/version_gem.rb.example
   mise.toml:
@@ -972,7 +972,7 @@ files:
     recipe: template_source_application_nomono_gemspec
     action: write
     dest_sha256: 957a2490de7ad7ea11e5c2ef9e74dab2bc4d35cac9a3c98f45644df830dbf2e4
-    input_fingerprint: 8dcc680e92f4a9da65263171b7bd4057f031cfb8580a95dc70042140a52dad59
+    input_fingerprint: d168d412a60aa6d9edaef3be512ab8e4f4ed18a764d6ada4ac260a40a9f9f43b
     template_sources:
     - gem.gemspec.example
   parsers.toml:
