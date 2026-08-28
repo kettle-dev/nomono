@@ -33,6 +33,7 @@ local_gems = %w[
   kettle-family
   kettle-test
   kettle-soup-cover
+  kettle-changelog
   kettle-drift
 ]
 

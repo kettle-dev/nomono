@@ -18,7 +18,7 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 # Include dependencies from nomono.gemspec
 gemspec
 
-gem 'kettle-family', '~> 1.2', '>= 1.2.62'
+gem "kettle-family", "~> 1.2", ">= 1.2.62"
 
 # Templating (env-switched: STRUCTUREDMERGE_DEV=/path/to/structuredmerge/ruby/gems for local paths)
 eval_gemfile "gemfiles/modular/templating.gemfile" if ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
@@ -34,6 +34,9 @@ eval_gemfile "gemfiles/modular/style.gemfile"
 
 # Documentation
 eval_gemfile "gemfiles/modular/documentation.gemfile"
+
+# Changelog release tooling (available on Ruby versions supported by kettle-changelog)
+eval_gemfile "gemfiles/modular/changelog.gemfile"
 
 # Optional
 eval_gemfile "gemfiles/modular/optional.gemfile"

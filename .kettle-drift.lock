@@ -12,8 +12,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        44,
-        54
+        45,
+        55
       ]
     }
   ],
@@ -21,8 +21,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        45,
-        55
+        46,
+        56
       ]
     }
   ],
@@ -30,8 +30,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        47,
-        57
+        48,
+        58
       ]
     }
   ],
@@ -48,8 +48,8 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        46,
-        56
+        47,
+        57
       ]
     }
   ],
@@ -66,9 +66,9 @@
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
-        459,
-        462,
-        465
+        471,
+        474,
+        477
       ]
     }
   ],
