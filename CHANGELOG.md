@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.5] - 2026-08-28
+
+- TAG: [v1.1.5][1.1.5t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Changed
+
 - [kc] kettle-jem/prepare: updated 12 project files:
   - configuration (1)
   - dependencies (11)
@@ -32,14 +49,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - dependencies (1)
   - documentation (2)
   - other (3)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [1.1.4] - 2026-08-02
 
@@ -330,7 +339,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.4...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.5...HEAD
+[1.1.5]: https://github.com/kettle-dev/nomono/compare/v1.1.4...v1.1.5
+[1.1.5t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.5
 [1.1.4]: https://github.com/kettle-dev/nomono/compare/v1.1.3...v1.1.4
 [1.1.4t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.4
 [1.1.3]: https://github.com/kettle-dev/nomono/compare/v1.1.2...v1.1.3
