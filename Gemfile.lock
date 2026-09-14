@@ -607,7 +607,7 @@ DEPENDENCIES
   kettle-dev (~> 3.0, >= 3.0.16)
   kettle-family (~> 1.2, >= 1.2.62)
   kettle-soup-cover (~> 3.0, >= 3.0.9)
-  kettle-test (~> 2.0, >= 2.0.21)
+  kettle-test (~> 2.0, >= 2.0.22)
   kramdown (~> 2.5, >= 2.5.2)
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
