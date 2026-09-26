@@ -1,10 +1,36 @@
 {
+  "debug_env: \"KETTLE_DEV_DEBUG\",\nroot: [\"src\", \"my\", \"kettle-dev\"]": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        44,
+        79
+      ]
+    },
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        76,
+        109
+      ]
+    }
+  ],
   "debug_env: \"RUBOCOP_LTS_DEBUG\",\nroot: [\"src\", \"rubocop-lts\"]": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         51,
-        60
+        60,
+        69
+      ]
+    }
+  ],
+  "declared_gems = instance_variable_get(:@dependencies).to_a.map(&:name)\nlocal_gems_to_eval = local_gems - %w[] - declared_gems": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        48,
+        65
       ]
     }
   ],
@@ -12,8 +38,25 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
+        68,
+        73,
+        83
+      ]
+    },
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
         45,
-        55
+        54
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\nrubygems: latest": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        43,
+        49
       ]
     }
   ],
@@ -21,8 +64,17 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
+        74,
+        84
+      ]
+    }
+  ],
+  "gems: local_gems_to_eval,\nprefix: \"RUBOCOP_LTS\",": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
         46,
-        56
+        55
       ]
     }
   ],
@@ -30,8 +82,9 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        48,
-        58
+        41,
+        76,
+        86
       ]
     }
   ],
@@ -39,8 +92,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        48,
-        57
+        57,
+        66
       ]
     }
   ],
@@ -48,8 +101,16 @@
     {
       "file": "gemfiles/modular/coverage_local.gemfile",
       "lines": [
-        47,
-        57
+        40,
+        75,
+        85
+      ]
+    },
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        74,
+        105
       ]
     }
   ],
@@ -57,8 +118,17 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        47,
-        56
+        56,
+        65
+      ]
+    }
+  ],
+  "prefix: \"STRUCTUREDMERGE\",\npath_env: \"STRUCTUREDMERGE_DEV\",": [
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        80,
+        94
       ]
     }
   ],
@@ -72,12 +142,47 @@
       ]
     }
   ],
+  "vendor_gem_dir_env: \"VENDOR_GEM_DIR\",\ndebug_env: \"KETTLE_DEV_DEBUG\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        43,
+        78
+      ]
+    }
+  ],
   "vendor_gem_dir_env: \"VENDOR_GEM_DIR\",\ndebug_env: \"RUBOCOP_LTS_DEBUG\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         50,
-        59
+        59,
+        68
+      ]
+    }
+  ],
+  "vendored_gems_env: \"VENDORED_GEMS\",\nvendor_gem_dir_env: \"VENDOR_GEM_DIR\",": [
+    {
+      "file": "gemfiles/modular/coverage_local.gemfile",
+      "lines": [
+        42,
+        77,
+        87
+      ]
+    },
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        49,
+        58,
+        67
+      ]
+    },
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        96,
+        107
       ]
     }
   ]
