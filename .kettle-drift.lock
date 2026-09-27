@@ -314,6 +314,24 @@
       ]
     }
   ],
+  "shared_nomono_options.merge(\nprefix: \"KETTLE_DEV\",": [
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        84,
+        95
+      ]
+    }
+  ],
+  "shared_nomono_options.merge(\nprefix: \"STRUCTUREDMERGE\",": [
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        90,
+        101
+      ]
+    }
+  ],
   "strategy: merge\nrecipe: .kettle-jem/recipes/nomono_local_gemfile.yml": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
