@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.6] - 2026-09-28
+
+- TAG: [v1.1.6][1.1.6t]
+- COVERAGE: 97.56% -- 120/123 lines in 7 files
+- BRANCH COVERAGE: 86.67% -- 39/45 branches in 7 files
+- 25.00% documented
+
+### Added
+
 - kettle-jem-template-20260913-001 - Templating now also surfaces a review
   entry in `dependency_conflicts.resolve` when a direct development
   dependency doesn't support one or more of this project's declared
@@ -37,14 +56,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - dependencies (2)
   - other (1)
   - workflows (18)
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 
 ## [1.1.5] - 2026-08-28
 
@@ -355,7 +366,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.5...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.6...HEAD
+[1.1.6]: https://github.com/kettle-dev/nomono/compare/v1.1.5...v1.1.6
+[1.1.6t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.6
 [1.1.5]: https://github.com/kettle-dev/nomono/compare/v1.1.4...v1.1.5
 [1.1.5t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.5
 [1.1.4]: https://github.com/kettle-dev/nomono/compare/v1.1.3...v1.1.4
