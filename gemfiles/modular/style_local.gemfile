@@ -66,6 +66,15 @@ platform :mri do
     vendored_gems_env: "VENDORED_GEMS",
     vendor_gem_dir_env: "VENDOR_GEM_DIR",
     debug_env: "RUBOCOP_LTS_DEBUG",
+    root: ["src", "my", "rubocop-lts"]
+  )
+  eval_nomono_gems(
+    gems: local_gems_to_eval,
+    prefix: "RUBOCOP_LTS",
+    path_env: "RUBOCOP_LTS_DEV",
+    vendored_gems_env: "VENDORED_GEMS",
+    vendor_gem_dir_env: "VENDOR_GEM_DIR",
+    debug_env: "RUBOCOP_LTS_DEBUG",
     root: ["src", "rubocop-lts"]
   )
   eval_nomono_gems(

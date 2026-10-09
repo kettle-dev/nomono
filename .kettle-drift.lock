@@ -11,14 +11,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         35,
-        95
+        104
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         33,
-        150
+        161
       ]
     }
   ],
@@ -36,7 +36,8 @@
         85,
         96,
         107,
-        140
+        118,
+        151
       ]
     }
   ],
@@ -44,9 +45,9 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        68,
         77,
-        86
+        86,
+        95
       ]
     }
   ],
@@ -72,7 +73,8 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         62,
-        71
+        71,
+        80
       ]
     }
   ],
@@ -99,7 +101,8 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         63,
-        72
+        72,
+        81
       ]
     }
   ],
@@ -115,14 +118,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         33,
-        93
+        102
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         31,
-        148
+        159
       ]
     }
   ],
@@ -138,14 +141,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         30,
-        90
+        99
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         28,
-        145
+        156
       ]
     }
   ],
@@ -161,14 +164,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         36,
-        96
+        105
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         34,
-        151
+        162
       ]
     }
   ],
@@ -184,14 +187,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         37,
-        97
+        106
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         35,
-        152
+        163
       ]
     }
   ],
@@ -207,14 +210,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         34,
-        94
+        103
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         32,
-        149
+        160
       ]
     }
   ],
@@ -230,14 +233,14 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         38,
-        98
+        107
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
         36,
-        153
+        164
       ]
     }
   ],
@@ -247,7 +250,8 @@
       "lines": [
         84,
         95,
-        106
+        106,
+        117
       ]
     }
   ],
@@ -261,12 +265,21 @@
       ]
     }
   ],
+  "path_env: \"RUBOCOP_LTS_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        65,
+        74
+      ]
+    }
+  ],
   "path_env: \"RUBOCOP_LTS_LOCAL\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        74,
-        83
+        83,
+        92
       ]
     }
   ],
@@ -276,7 +289,8 @@
       "lines": [
         90,
         101,
-        112
+        112,
+        123
       ]
     }
   ],
@@ -295,7 +309,17 @@
         83,
         94,
         105,
-        136
+        116,
+        147
+      ]
+    }
+  ],
+  "prefix: \"RUBOCOP_LTS\",\npath_env: \"RUBOCOP_LTS_DEV\",": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        64,
+        73
       ]
     }
   ],
@@ -303,8 +327,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        73,
-        82
+        82,
+        91
       ]
     }
   ],
@@ -315,7 +339,8 @@
         89,
         100,
         111,
-        125
+        122,
+        136
       ]
     }
   ],
@@ -325,7 +350,8 @@
       "lines": [
         82,
         93,
-        104
+        104,
+        115
       ]
     }
   ],
@@ -335,7 +361,8 @@
       "lines": [
         88,
         99,
-        110
+        110,
+        121
       ]
     }
   ],
@@ -364,7 +391,8 @@
       "lines": [
         67,
         76,
-        85
+        85,
+        94
       ]
     }
   ],
@@ -382,14 +410,15 @@
       "lines": [
         66,
         75,
-        84
+        84,
+        93
       ]
     },
     {
       "file": "gemfiles/modular/templating_local.gemfile",
       "lines": [
-        127,
-        138
+        138,
+        149
       ]
     }
   ]

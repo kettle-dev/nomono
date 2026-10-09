@@ -112,6 +112,17 @@ shared_nomono_options.merge(
   path_env: "STRUCTUREDMERGE_DEV",
   debug_env: "STRUCTUREDMERGE_DEBUG"
 )
+shared_nomono_options.merge(
+  prefix: "KETTLE_DEV",
+  path_env: "KETTLE_DEV_DEV",
+  debug_env: "KETTLE_DEV_DEBUG",
+  root: ["src", "my", "kettle-dev"]
+)
+shared_nomono_options.merge(
+  prefix: "STRUCTUREDMERGE",
+  path_env: "STRUCTUREDMERGE_DEV",
+  debug_env: "STRUCTUREDMERGE_DEBUG"
+)
 
 declared_gems = instance_variable_get(:@dependencies).to_a.map(&:name)
 structuredmerge_local_gems_to_eval = structuredmerge_local_gems - %w[]
