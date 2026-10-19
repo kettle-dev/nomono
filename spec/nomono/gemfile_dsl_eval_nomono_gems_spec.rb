@@ -210,11 +210,15 @@ RSpec.describe Nomono::GemfileDsl, "#eval_nomono_gems" do
         expect(dependency.platforms).to eq([:ruby, :jruby])
         expect(dependency.autorequire).to be_empty
         expect(dependency.force_ruby_platform).to be(true)
-        expect(dependency.should_include).to be(enabled)
-        expect(dependency.env).to eq("NOMONO_SPEC_CONDITION" => "enabled")
+        # Bundler 2 keeps env/install_if state in ivars, without Bundler 4's
+        # readers. Assert behavior through their shared public predicates.
+        # Platform selection is orthogonal and differs on TruffleRuby.
+        allow(dependency).to receive(:current_platform?).and_return(true)
         stub_env("NOMONO_SPEC_CONDITION" => "enabled")
+        expect(dependency).to be_current_env
         expect(dependency.should_include?).to be(enabled)
         stub_env("NOMONO_SPEC_CONDITION" => "disabled")
+        expect(dependency).not_to be_current_env
         expect(dependency.should_include?).to be(false)
       end
     end
@@ -225,7 +229,9 @@ RSpec.describe Nomono::GemfileDsl, "#eval_nomono_gems" do
       gem "sibling", "~> 7.1", git: "file:///nonexistent/nomono-fixture", branch: "main", ref: "abc", glob: "old/*.gemspec", require: "custom"
       @original = dependencies.first
       @original.instance_variable_set(:@future_metadata, :retained)
-      [:source, :path, :git, :github, :branch, :ref, :glob, :groups, :platforms, :autorequire, :env, :force_ruby_platform].each { |key| @original.public_send(key) }
+      [:source, :path, :git, :github, :branch, :ref, :glob, :groups, :platforms, :autorequire, :env, :force_ruby_platform].each do |key|
+        @original.public_send(key) if @original.respond_to?(key)
+      end
       eval_nomono_gems gems: ["sibling"], path_env: "FAMILY_DEV"
     RUBY
     original = dsl.instance_variable_get(:@original)
