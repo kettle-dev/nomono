@@ -32,6 +32,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Make eval_nomono_gems intentionally override existing direct dependencies with registered local path sources while intersecting caller and gemspec constraints, preserving dependency conditions and metadata, and supporting either declaration order and repeated calls.
 
+- [kc] shared-local-template-overrides: Regenerate coverage and templating local Gemfiles with the shared Nomono override API instead of obsolete custom merge and inline dependency replacement.
+
 ### Security
 
 ## [1.1.8] - 2026-10-15

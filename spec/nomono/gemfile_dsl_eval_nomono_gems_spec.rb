@@ -19,7 +19,11 @@ RSpec.describe Nomono::GemfileDsl, "#eval_nomono_gems" do
         end
       RUBY
       write_owner(:runtime, "= 7.1.14")
-      example.run
+      # These fixtures have no lockfile and must exercise resolution regardless
+      # of the parent bundle's deployment/frozen and group-selection settings.
+      Bundler.settings.temporary(frozen: false, deployment: false, without: [], with: []) do
+        example.run
+      end
     end
   end
 

@@ -480,13 +480,7 @@ files:
     modular:
       templating.gemfile:
         strategy: accept_template
-      coverage_local.gemfile:
-        strategy: merge
-        recipe: .kettle-jem/recipes/nomono_local_gemfile.yml
       style_local.gemfile:
-        strategy: merge
-        recipe: .kettle-jem/recipes/nomono_local_gemfile.yml
-      templating_local.gemfile:
         strategy: merge
         recipe: .kettle-jem/recipes/nomono_local_gemfile.yml
 
