@@ -30,6 +30,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - [kc] nomono-fact-requirements: Forward explicit dependency requirements through eval_nomono_gems instead of discarding them before declaring local path dependencies.
 
+- Make eval_nomono_gems intentionally override existing direct dependencies with registered local path sources while intersecting caller and gemspec constraints, preserving dependency conditions and metadata, and supporting either declaration order and repeated calls.
+
 ### Security
 
 ## [1.1.8] - 2026-10-15
