@@ -28,6 +28,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- [kc] nomono-fact-requirements: Forward explicit dependency requirements through eval_nomono_gems instead of discarding them before declaring local path dependencies.
+
 ### Security
 
 ## [1.1.8] - 2026-10-15

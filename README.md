@@ -29,6 +29,31 @@ It provides two Gemfile macros:
 - `eval_nomono_gems(**opts)` directly emits `gem "name", path: "..."`
 
 The API mirrors existing `*_local.gemfile` patterns used in kettle-dev projects, but centralizes path/env logic in one reusable library.
+
+Pass dependency requirements from the caller's project facts to the same macro:
+
+```ruby
+eval_nomono_gems(
+  gems: %w[shared-core shared-leaf],
+  requirements: {
+    "shared-core" => ["= 7.1.14"],
+    "shared-leaf" => ["~> 2.0", ">= 2.0.3"]
+  },
+  path_env: "FAMILY_DEV"
+)
+```
+
+`requirements` is a map of gem names to requirement strings or arrays. Omitted
+entries keep the unversioned (`>= 0`) behavior. Requirements go directly to
+Bundler; Nomono does not infer them from checkout versions, filter incompatible
+checkouts, or silently select a registry source instead. Repository shape and
+CI/local-development policy remain the caller's responsibility.
+
+Declare each direct dependency's source once. A runtime gemspec requirement can
+coexist with a matching path dependency, but repeated direct Gemfile declarations
+with different requirements or different sources are Bundler DSL errors; merely
+repeating a version requirement does not reconcile different direct sources.
+
 Use `require "nomono"` for the runtime resolver API.
 Use `require "nomono/bundler"` from Gemfiles or modular Gemfiles; this is the explicit hook that installs the Gemfile macros into `Bundler::Dsl`.
 
