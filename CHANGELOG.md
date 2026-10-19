@@ -28,13 +28,22 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [1.1.11] - 2026-10-19
+
+- TAG: [v1.1.11][1.1.11t]
+- COVERAGE: 97.37% -- 185/190 lines in 7 files
+- BRANCH COVERAGE: 83.10% -- 59/71 branches in 7 files
+- 27.78% documented
+
+### Fixed
+
 - [kc] nomono-fact-requirements: Forward explicit dependency requirements through eval_nomono_gems instead of discarding them before declaring local path dependencies.
 
 - Make eval_nomono_gems intentionally override existing direct dependencies with registered local path sources while intersecting caller and gemspec constraints, preserving dependency conditions and metadata, and supporting either declaration order and repeated calls.
 
 - [kc] shared-local-template-overrides: Regenerate coverage and templating local Gemfiles with the shared Nomono override API instead of obsolete custom merge and inline dependency replacement.
-
-### Security
 
 ## [1.1.8] - 2026-10-15
 
@@ -410,7 +419,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.8...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.11...HEAD
+[1.1.11]: https://github.com/kettle-dev/nomono/compare/v1.1.8...v1.1.11
+[1.1.11t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.11
 [1.1.8]: https://github.com/kettle-dev/nomono/compare/v1.1.7...v1.1.8
 [1.1.8t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.8
 [1.1.7]: https://github.com/kettle-dev/nomono/compare/v1.1.6...v1.1.7

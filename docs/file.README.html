@@ -96,8 +96,32 @@
 </li>
 </ul>
 
-<p>The API mirrors existing <code>*_local.gemfile</code> patterns used in kettle-dev projects, but centralizes path/env logic in one reusable library.<br>
-Use <code>require "nomono"</code> for the runtime resolver API.<br>
+<p>The API mirrors existing <code>*_local.gemfile</code> patterns used in kettle-dev projects, but centralizes path/env logic in one reusable library.</p>
+
+<p>Pass dependency requirements from the caller’s project facts to the same macro:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">eval_nomono_gems(
+  gems: %w[shared-core shared-leaf],
+  requirements: {
+    &quot;shared-core&quot; =&gt; [&quot;= 7.1.14&quot;],
+    &quot;shared-leaf&quot; =&gt; [&quot;~&gt; 2.0&quot;, &quot;&gt;= 2.0.3&quot;]
+  },
+  path_env: &quot;FAMILY_DEV&quot;
+)
+</code></pre>
+
+<p><code>requirements</code> is a map of gem names to requirement strings or arrays. Omitted<br>
+entries keep the unversioned (<code>&gt;= 0</code>) behavior. Requirements go directly to<br>
+Bundler; Nomono does not infer them from checkout versions, filter incompatible<br>
+checkouts, or silently select a registry source instead. Repository shape and<br>
+CI/local-development policy remain the caller’s responsibility.</p>
+
+<p>Declare each direct dependency’s source once. A runtime gemspec requirement can<br>
+coexist with a matching path dependency, but repeated direct Gemfile declarations<br>
+with different requirements or different sources are Bundler DSL errors; merely<br>
+repeating a version requirement does not reconcile different direct sources.</p>
+
+<p>Use <code>require "nomono"</code> for the runtime resolver API.<br>
 Use <code>require "nomono/bundler"</code> from Gemfiles or modular Gemfiles; this is the explicit hook that installs the Gemfile macros into <code>Bundler::Dsl</code>.</p>
 
 <h2 id="-info-you-can-shake-a-stick-at">💡 Info you can shake a stick at</h2>
@@ -145,7 +169,7 @@ Use <code>require "nomono/bundler"</code> from Gemfiles or modular Gemfiles; thi
     <tr>
       <td>Source</td>
       <td>
-<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=GitHub&amp;logoColor=green" alt="Source on GitHub.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.123-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
+<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=GitHub&amp;logoColor=green" alt="Source on GitHub.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.190-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
 </td>
     </tr>
     <tr>
