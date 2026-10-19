@@ -30,6 +30,13 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Security
 
+## [1.1.12] - 2026-10-19
+
+- TAG: [v1.1.12][1.1.12t]
+- COVERAGE: 97.37% -- 185/190 lines in 7 files
+- BRANCH COVERAGE: 83.10% -- 59/71 branches in 7 files
+- 27.78% documented
+
 ## [1.1.11] - 2026-10-19
 
 - TAG: [v1.1.11][1.1.11t]
@@ -419,7 +426,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.11...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.12...HEAD
+[1.1.12]: https://github.com/kettle-dev/nomono/compare/v1.1.11...v1.1.12
+[1.1.12t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.12
 [1.1.11]: https://github.com/kettle-dev/nomono/compare/v1.1.8...v1.1.11
 [1.1.11t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.11
 [1.1.8]: https://github.com/kettle-dev/nomono/compare/v1.1.7...v1.1.8
