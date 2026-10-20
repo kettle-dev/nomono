@@ -39,10 +39,11 @@ module Nomono
     # dependency keeps its constraints and metadata; explicit facts only narrow
     # them. A new dependency with no facts retains Bundler's default >= 0.
     def eval_nomono_gems(gems:, requirements: {}, **opts)
-      # Bundler's plugin scan evaluates the whole Gemfile with a DSL whose
-      # gem and gemspec declarations are undef'd silent no-ops; nothing is
-      # collected, so there is no dependency graph to override here.
-      return if respond_to?(:dependencies) && !respond_to?(:gem)
+      # Bundler's plugin scan evaluates the whole Gemfile with a plugins-only
+      # DSL: some Bundlers undef gem and gemspec, newer ones define gem as an
+      # explicit no-op. Either way no dependency is collected, so there is no
+      # declaration graph to override here.
+      return if respond_to?(:dependencies) && nomono_plugin_scan_dsl?
 
       nomono_gems(gems: gems, **opts).each do |gem_name, gem_path|
         # Keep lightweight non-Bundler consumers of the macro working too.
@@ -60,6 +61,9 @@ module Nomono
         else
           gem(gem_name, *Array(requirements[gem_name]), path: gem_path)
           replacement = dependencies.last
+          # A plugins-only DSL silently drops the declaration; nothing was
+          # collected, so there is no override to register.
+          next unless replacement && replacement.name == gem_name
         end
         @nomono_overrides ||= {}
         previous = @nomono_overrides[gem_name]
@@ -73,6 +77,16 @@ module Nomono
     end
 
     private
+
+    # Both known plugins-only DSL shapes collect no gem declarations: older
+    # Bundlers undef gem, and Bundler 4.1+ defines it as an explicit no-op.
+    # The ancestor check is primary; the respond_to fallback covers any
+    # plugin DSL that undef's gem instead.
+    def nomono_plugin_scan_dsl?
+      return true if defined?(Bundler::Plugin::DSL) && is_a?(Bundler::Plugin::DSL)
+
+      !respond_to?(:gem)
+    end
 
     # Bundler may already have preferred a direct Gemfile declaration and
     # discarded the intersected gemspec development constraint from its list.

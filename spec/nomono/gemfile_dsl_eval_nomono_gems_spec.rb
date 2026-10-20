@@ -342,4 +342,25 @@ RSpec.describe Nomono::GemfileDsl, "#eval_nomono_gems" do
     expect { plugin_dsl.eval_gemfile(path) }.not_to raise_error
     expect(plugin_dsl.dependencies).to be_empty
   end
+
+  # Bundler 4.1's plugins-only DSL defines gem as an explicit no-op instead
+  # of undef'ing it, so a respond_to?(:gem) probe alone cannot detect the
+  # scan. The macro must still skip the pass without collecting anything.
+  it "no-ops when the plugins-only DSL defines gem as a no-op" do
+    plugin_shape = Class.new(Bundler::Dsl) do
+      def gem(*args)
+        # Ignore regular dependencies when doing the plugins-only pre-parse.
+      end
+
+      def gemspec(*args)
+        # Ignore regular dependencies when doing the plugins-only pre-parse.
+      end
+    end
+    plugin_dsl = plugin_shape.new.extend(described_class)
+    path = File.join(@root, "Gemfile")
+    File.write(path, 'eval_nomono_gems gems: ["sibling"], path_env: "FAMILY_DEV"')
+
+    expect { plugin_dsl.eval_gemfile(path) }.not_to raise_error
+    expect(plugin_dsl.dependencies).to be_empty
+  end
 end

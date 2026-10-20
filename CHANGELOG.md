@@ -28,6 +28,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- [kc] plugin-scan-bundler41: Detect Bundler 4.1 plugin scans by DSL ancestry and tolerate any plugins-only DSL that drops gem declarations silently, instead of relying solely on gem being undef'd; evaluation no longer crashes when the scan defines gem as a no-op.
+
 ### Security
 
 ## [1.1.13] - 2026-10-19
