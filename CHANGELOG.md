@@ -28,9 +28,18 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- [kc] plugin-scan-bundler41: Detect Bundler 4.1 plugin scans by DSL ancestry and tolerate any plugins-only DSL that drops gem declarations silently, instead of relying solely on gem being undef'd; evaluation no longer crashes when the scan defines gem as a no-op.
-
 ### Security
+
+## [1.1.14] - 2026-10-19
+
+- TAG: [v1.1.14][1.1.14t]
+- COVERAGE: 97.44% -- 190/195 lines in 7 files
+- BRANCH COVERAGE: 84.42% -- 65/77 branches in 7 files
+- 27.78% documented
+
+### Fixed
+
+- [kc] plugin-scan-bundler41: Detect Bundler 4.1 plugin scans by DSL ancestry and tolerate any plugins-only DSL that drops gem declarations silently, instead of relying solely on gem being undef'd; evaluation no longer crashes when the scan defines gem as a no-op.
 
 ## [1.1.13] - 2026-10-19
 
@@ -436,7 +445,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.12...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.14...HEAD
+[1.1.14]: https://github.com/kettle-dev/nomono/compare/v1.1.13...v1.1.14
+[1.1.14t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.14
 [1.1.12]: https://github.com/kettle-dev/nomono/compare/v1.1.11...v1.1.12
 [1.1.12t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.12
 [1.1.11]: https://github.com/kettle-dev/nomono/compare/v1.1.8...v1.1.11

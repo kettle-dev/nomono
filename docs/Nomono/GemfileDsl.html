@@ -211,12 +211,27 @@ them. A new dependency with no facts retains Bundler’s default &gt;= 0.</p>
 65
 66
 67
-68</pre>
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/nomono/dsl.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_eval_nomono_gems'>eval_nomono_gems</span><span class='lparen'>(</span><span class='label'>gems:</span><span class='comma'>,</span> <span class='label'>requirements:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
+  <span class='comment'># Bundler&#39;s plugin scan evaluates the whole Gemfile with a plugins-only
+</span>  <span class='comment'># DSL: some Bundlers undef gem and gemspec, newer ones define gem as an
+</span>  <span class='comment'># explicit no-op. Either way no dependency is collected, so there is no
+</span>  <span class='comment'># declaration graph to override here.
+</span>  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:dependencies</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_nomono_plugin_scan_dsl?'>nomono_plugin_scan_dsl?</span>
+
   <span class='id identifier rubyid_nomono_gems'>nomono_gems</span><span class='lparen'>(</span><span class='label'>gems:</span> <span class='id identifier rubyid_gems'>gems</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_gem_name'>gem_name</span><span class='comma'>,</span> <span class='id identifier rubyid_gem_path'>gem_path</span><span class='op'>|</span>
     <span class='comment'># Keep lightweight non-Bundler consumers of the macro working too.
 </span>    <span class='kw'>unless</span> <span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:dependencies</span><span class='rparen'>)</span>
@@ -233,6 +248,9 @@ them. A new dependency with no facts retains Bundler’s default &gt;= 0.</p>
     <span class='kw'>else</span>
       <span class='id identifier rubyid_gem'>gem</span><span class='lparen'>(</span><span class='id identifier rubyid_gem_name'>gem_name</span><span class='comma'>,</span> <span class='op'>*</span><span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_requirements'>requirements</span><span class='lbracket'>[</span><span class='id identifier rubyid_gem_name'>gem_name</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='label'>path:</span> <span class='id identifier rubyid_gem_path'>gem_path</span><span class='rparen'>)</span>
       <span class='id identifier rubyid_replacement'>replacement</span> <span class='op'>=</span> <span class='id identifier rubyid_dependencies'>dependencies</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
+      <span class='comment'># A plugins-only DSL silently drops the declaration; nothing was
+</span>      <span class='comment'># collected, so there is no override to register.
+</span>      <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_replacement'>replacement</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_replacement'>replacement</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='op'>==</span> <span class='id identifier rubyid_gem_name'>gem_name</span>
     <span class='kw'>end</span>
     <span class='ivar'>@nomono_overrides</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
     <span class='id identifier rubyid_previous'>previous</span> <span class='op'>=</span> <span class='ivar'>@nomono_overrides</span><span class='lbracket'>[</span><span class='id identifier rubyid_gem_name'>gem_name</span><span class='rbracket'>]</span>
