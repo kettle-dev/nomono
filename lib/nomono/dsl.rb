@@ -39,6 +39,11 @@ module Nomono
     # dependency keeps its constraints and metadata; explicit facts only narrow
     # them. A new dependency with no facts retains Bundler's default >= 0.
     def eval_nomono_gems(gems:, requirements: {}, **opts)
+      # Bundler's plugin scan evaluates the whole Gemfile with a DSL whose
+      # gem and gemspec declarations are undef'd silent no-ops; nothing is
+      # collected, so there is no dependency graph to override here.
+      return if respond_to?(:dependencies) && !respond_to?(:gem)
+
       nomono_gems(gems: gems, **opts).each do |gem_name, gem_path|
         # Keep lightweight non-Bundler consumers of the macro working too.
         unless respond_to?(:dependencies)

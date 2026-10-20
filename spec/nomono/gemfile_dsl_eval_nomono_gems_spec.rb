@@ -328,4 +328,18 @@ RSpec.describe Nomono::GemfileDsl, "#eval_nomono_gems" do
     expect(dependency.source).to be_a(Bundler::Source::Path)
     expect(dsl.to_definition(nil, true).resolve.map(&:name)).to include("sibling")
   end
+
+  # `bundle update` evaluates the Gemfile once more through
+  # Bundler::Plugin::DSL, which undef's gem and gemspec so both become silent
+  # no-ops that collect no dependencies. The macro must skip that pass rather
+  # than read a nil dependency back from an empty declaration list.
+  it "no-ops when Bundler's plugin scan undef's gem declarations" do
+    require "bundler/plugin/dsl"
+    plugin_dsl = Bundler::Plugin::DSL.new.extend(described_class)
+    path = File.join(@root, "Gemfile")
+    File.write(path, 'eval_nomono_gems gems: ["sibling"], path_env: "FAMILY_DEV"')
+
+    expect { plugin_dsl.eval_gemfile(path) }.not_to raise_error
+    expect(plugin_dsl.dependencies).to be_empty
+  end
 end

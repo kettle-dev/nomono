@@ -28,6 +28,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- [kc] bundler-plugin-scan: Skip eval_nomono_gems when Bundler evaluates the Gemfile through its plugin scan, whose DSL undefines gem and gemspec declarations; reading back the last dependency from that empty list crashed bundle update with NoMethodError.
+
 ### Security
 
 ## [1.1.12] - 2026-10-19
