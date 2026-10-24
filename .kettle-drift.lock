@@ -1,4 +1,13 @@
 {
+  "- documentation (1)\n- other (1)": [
+    {
+      "file": "CHANGELOG.md",
+      "lines": [
+        32,
+        100
+      ]
+    }
+  ],
   "- ruby: \"ruby\"\nappraisal: \"current\"": [
     {
       "file": ".github/workflows/current.yml",
@@ -13,7 +22,16 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         35,
-        104
+        153
+      ]
+    }
+  ],
+  "debug_env: \"RUBOCOP_LTS_DEBUG\",\nroot: [\"src\", \"my\", \"rubocop-lts\"]": [
+    {
+      "file": "gemfiles/modular/style_local.gemfile",
+      "lines": [
+        108,
+        117
       ]
     }
   ],
@@ -21,9 +39,9 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        77,
-        86,
-        95
+        126,
+        135,
+        144
       ]
     }
   ],
@@ -31,9 +49,10 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        62,
-        71,
-        80
+        101,
+        111,
+        120,
+        129
       ]
     }
   ],
@@ -50,9 +69,9 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        63,
-        72,
-        81
+        112,
+        121,
+        130
       ]
     }
   ],
@@ -61,7 +80,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         33,
-        102
+        151
       ]
     }
   ],
@@ -70,7 +89,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         30,
-        99
+        148
       ]
     }
   ],
@@ -79,7 +98,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         36,
-        105
+        154
       ]
     }
   ],
@@ -88,7 +107,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         37,
-        106
+        155
       ]
     }
   ],
@@ -97,7 +116,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         34,
-        103
+        152
       ]
     }
   ],
@@ -106,7 +125,7 @@
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
         38,
-        107
+        156
       ]
     }
   ],
@@ -114,8 +133,9 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        65,
-        74
+        105,
+        114,
+        123
       ]
     }
   ],
@@ -123,8 +143,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        83,
-        92
+        132,
+        141
       ]
     }
   ],
@@ -132,8 +152,9 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        64,
-        73
+        104,
+        113,
+        122
       ]
     }
   ],
@@ -141,8 +162,8 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        82,
-        91
+        131,
+        140
       ]
     }
   ],
@@ -150,10 +171,11 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        67,
-        76,
-        85,
-        94
+        107,
+        116,
+        125,
+        134,
+        143
       ]
     }
   ],
@@ -161,10 +183,11 @@
     {
       "file": "gemfiles/modular/style_local.gemfile",
       "lines": [
-        66,
-        75,
-        84,
-        93
+        106,
+        115,
+        124,
+        133,
+        142
       ]
     }
   ]
