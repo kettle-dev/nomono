@@ -1,10 +1,20 @@
 {
+  "- code and tests (1)\n- documentation (1)": [
+    {
+      "file": "CHANGELOG.md",
+      "lines": [
+        29,
+        116
+      ]
+    }
+  ],
   "- documentation (1)\n- other (1)": [
     {
       "file": "CHANGELOG.md",
       "lines": [
-        32,
-        100
+        30,
+        57,
+        117
       ]
     }
   ],
