@@ -18,7 +18,7 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 # Include dependencies from nomono.gemspec
 gemspec
 
-gem "kettle-family", "~> 1.3", ">= 1.3.33"
+gem "kettle-family", "~> 1.3", ">= 1.3.35"
 
 # Templating and the StructuredMerge family share this modular Gemfile.
 # kettle-jem needs StructuredMerge to template, and kettle-changelog needs it at
