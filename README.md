@@ -149,6 +149,7 @@ Nomono has an *environment contract*. By default (`prefix: "NOMONO_GEMS"`):
 - `NOMONO_GEMS_VENDORED_GEMS` (or legacy `VENDORED_GEMS`) is a comma-delimited list of gem names resolved from a vendor directory. This is **independent** of `NOMONO_GEMS_DEV` — it applies when you have vendored copies of specific gems that should override both the workspace and released versions.
 - `NOMONO_GEMS_VENDOR_GEM_DIR` (or legacy `VENDOR_GEM_DIR`) is the base path of the vendor directory used for gems listed in `NOMONO_GEMS_VENDORED_GEMS`. Defaults to `$workspace_root/vendor`. This is **not** an alternative form of the workspace root — it only affects vendored gems.
 - `NOMONO_GEMS_PATH_ALIASES` (or global fallback `NOMONO_PATH_ALIASES`) is a comma-delimited list of `source=canonical` absolute path aliases. Each pair must resolve to the same real directory. Matching local gem paths are rewritten to the canonical spelling before Bundler receives them, preventing `Gemfile.lock` churn from equivalent paths such as `/var/home/...` and `/home/...`.
+- The `subdirs:` option maps gem names to relative paths within the selected workspace or vendor directory. Use it when a gem's source is nested inside a repository; paths must be relative and cannot contain `..`.
 - `NOMONO_GEMS_DEBUG` enables debug output from nomono.
 
 ### Examples
@@ -206,6 +207,19 @@ eval_nomono_gems(
   vendored_gems_env: "VENDORED_GEMS",
   vendor_gem_dir_env: "VENDOR_GEM_DIR",
   debug_env: "KETTLE_DEV_DEBUG"
+)
+```
+
+For a gem stored in a subdirectory of its repository, map its name to that
+relative path. Other gems keep the default `<root>/<gem-name>` layout:
+
+```ruby
+eval_nomono_gems(
+  gems: %w[structuredmerge-core],
+  prefix: "STRUCTUREDMERGE_CORE",
+  path_env: "STRUCTUREDMERGE_CORE_DEV",
+  root: %w[src my structuredmerge structuredmerge],
+  subdirs: {"structuredmerge-core" => "packages/ruby"}
 )
 ```
 

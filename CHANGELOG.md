@@ -20,6 +20,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+- [#34] Support resolving gems from configured relative subdirectories within workspace or vendor roots.
+
 ### Changed
 
 ### Deprecated

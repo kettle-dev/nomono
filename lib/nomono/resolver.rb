@@ -12,7 +12,7 @@ module Nomono
     end
 
     def gems(gems:, prefix: "NOMONO_GEMS", allowlist: gems, path_env: nil, vendored_gems_env: nil, vendor_gem_dir_env: nil,
-      debug_env: nil, path_aliases: nil, path_aliases_env: nil, root: ["src", "my"], strict: true, **_options)
+      debug_env: nil, path_aliases: nil, path_aliases_env: nil, subdirs: nil, root: ["src", "my"], strict: true, **_options)
       requested = normalize_gems(gems)
       allowed = normalize_gems(allowlist)
       requested.each { |gem_name| validate_gem_name!(gem_name, allowed, strict: strict) }
@@ -28,10 +28,11 @@ module Nomono
       aliases = normalize_path_aliases(
         path_aliases || fetch_with_fallback(path_aliases_env || "#{prefix}_PATH_ALIASES", "", "NOMONO_PATH_ALIASES")
       )
+      gem_subdirs = normalize_subdirs(subdirs)
 
       gem_paths = requested.each_with_object({}) do |gem_name, memo|
         base = vendored.include?(gem_name) ? vendor_dir : dev_root
-        memo[gem_name] = normalize_path_alias(File.join(base, gem_name), aliases)
+        memo[gem_name] = normalize_path_alias(File.join(base, gem_subdirs.fetch(gem_name, gem_name)), aliases)
       end
 
       debug_key = debug_env || "#{prefix}_DEBUG"
@@ -68,6 +69,23 @@ module Nomono
     def parse_vendored(value, allowed)
       normalize_gems(value.to_s.split(",")).select do |gem_name|
         gem_name.match?(VALIDATOR) && allowed.include?(gem_name)
+      end
+    end
+
+    def normalize_subdirs(value)
+      return {} if value.nil?
+      unless value.is_a?(Hash)
+        raise Error, "subdirs must be configured as a hash of gem names to relative paths"
+      end
+
+      value.each_with_object({}) do |(gem_name, subdir), memo|
+        path = subdir.to_s
+        segments = path.split(/[\\\/]+/)
+        if path.empty? || path.start_with?("/") || path.match?(/\A[A-Za-z]:/) || segments.include?("..") || segments.all? { |segment| segment.empty? || segment == "." }
+          raise Error, "subdirectory for gem '#{gem_name}' must be a relative path without '..'"
+        end
+
+        memo[gem_name.to_s] = path
       end
     end
 

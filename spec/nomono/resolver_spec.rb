@@ -64,6 +64,58 @@ RSpec.describe Nomono::Resolver do
       ).to include("kettle-dev" => "/home/test/relative/path/kettle-dev")
     end
 
+    it "resolves configured gems from relative subdirectories" do
+      env["NOMONO_GEMS_DEV"] = "/workspace/structuredmerge"
+
+      expect(
+        resolver.gems(gems: %w[structuredmerge-core other], subdirs: {"structuredmerge-core" => "packages/ruby"})
+      ).to eq(
+        "structuredmerge-core" => "/workspace/structuredmerge/packages/ruby",
+        "other" => "/workspace/structuredmerge/other"
+      )
+    end
+
+    it "uses configured subdirectories under the vendor directory and normalizes aliases" do
+      env["NOMONO_GEMS_DEV"] = "/var/home/test/workspace"
+      env["VENDORED_GEMS"] = "structuredmerge-core"
+      env["VENDOR_GEM_DIR"] = "/var/home/test/workspace/vendor"
+      allow(File).to receive(:realpath).and_call_original
+      allow(File).to receive(:realpath).with("/var/home/test").and_return("/mnt/home/test")
+      allow(File).to receive(:realpath).with("/home/test").and_return("/mnt/home/test")
+
+      expect(
+        resolver.gems(
+          gems: %w[structuredmerge-core],
+          subdirs: {"structuredmerge-core" => "packages/ruby"},
+          path_aliases: {"/var/home/test" => "/home/test"}
+        )
+      ).to eq("structuredmerge-core" => "/home/test/workspace/vendor/packages/ruby")
+    end
+
+    it "rejects absolute subdirectories and parent traversal" do
+      env["NOMONO_GEMS_DEV"] = "/workspace"
+
+      ["/packages/ruby", "../packages/ruby", "packages/../ruby", "C:\\packages\\ruby"].each do |subdir|
+        expect do
+          resolver.gems(gems: %w[structuredmerge-core], subdirs: {"structuredmerge-core" => subdir})
+        end.to raise_error(Nomono::Error, /must be a relative path without '\.\.'/)
+      end
+    end
+
+    it "requires subdirs to be a hash" do
+      env["NOMONO_GEMS_DEV"] = "/workspace"
+
+      expect do
+        resolver.gems(gems: %w[kettle-dev], subdirs: "packages/ruby")
+      end.to raise_error(Nomono::Error, /subdirs must be configured as a hash/)
+    end
+
+    it "still returns an empty hash when local mode is disabled with subdirectories configured" do
+      env["NOMONO_GEMS_DEV"] = "false"
+
+      expect(resolver.gems(gems: %w[structuredmerge-core], subdirs: {"structuredmerge-core" => "packages/ruby"})).to eq({})
+    end
+
     it "ignores unknown future keyword options" do
       env["NOMONO_GEMS_DEV"] = "/workspace/my"
 
