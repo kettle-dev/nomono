@@ -20,6 +20,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+- [#34] Support resolving gems from configured relative subdirectories within workspace or vendor roots.
+
 ### Changed
 
 ### Deprecated
@@ -29,6 +31,8 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Fixed
 
 ### Security
+
+- Require Addressable 2.9.1 or later and Nokogiri 1.19.5 or later to avoid known vulnerabilities in older dependency releases.
 
 ## [1.1.17] - 2026-10-28
 

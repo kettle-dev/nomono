@@ -46,6 +46,21 @@ RSpec.describe Nomono::GemfileDsl do
     ])
   end
 
+  it "passes per-gem subdirectories through to Gemfile path declarations" do
+    env = {"STRUCTUREDMERGE_CORE_DEV" => "/workspace/structuredmerge"}
+    allow(Nomono).to receive(:resolver).and_return(Nomono::Resolver.new(env: env))
+
+    dsl.eval_nomono_gems(
+      gems: %w[structuredmerge-core],
+      path_env: "STRUCTUREDMERGE_CORE_DEV",
+      subdirs: {"structuredmerge-core" => "packages/ruby"}
+    )
+
+    expect(dsl.captured).to eq([
+      ["structuredmerge-core", {path: "/workspace/structuredmerge/packages/ruby"}]
+    ])
+  end
+
   it "does not add paths when the owning family's toggle is disabled" do
     env = {"FAMILY_DEV" => "false", "CI" => "true"}
     allow(Nomono).to receive(:resolver).and_return(Nomono::Resolver.new(env: env))
