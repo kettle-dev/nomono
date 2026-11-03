@@ -20,8 +20,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- [#34] Support resolving gems from configured relative subdirectories within workspace or vendor roots.
-
 ### Changed
 
 ### Deprecated
@@ -29,6 +27,19 @@ Please file a bug if you notice a violation of semantic versioning.
 ### Removed
 
 ### Fixed
+
+### Security
+
+## [1.1.18] - 2026-11-03
+
+- TAG: [v1.1.18][1.1.18t]
+- COVERAGE: 97.57% -- 201/206 lines in 7 files
+- BRANCH COVERAGE: 85.54% -- 71/83 branches in 7 files
+- 27.78% documented
+
+### Added
+
+- [#34] Support resolving gems from configured relative subdirectories within workspace or vendor roots.
 
 ### Security
 
@@ -506,7 +517,9 @@ Please file a bug if you notice a violation of semantic versioning.
 - TAG: [v1.0.0][1.0.0t]
 - 12.50% documented
 
-[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.17...HEAD
+[Unreleased]: https://github.com/kettle-dev/nomono/compare/v1.1.18...HEAD
+[1.1.18]: https://github.com/kettle-dev/nomono/compare/v1.1.17...v1.1.18
+[1.1.18t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.18
 [1.1.17]: https://github.com/kettle-dev/nomono/compare/v1.1.16...v1.1.17
 [1.1.17t]: https://github.com/kettle-dev/nomono/releases/tag/v1.1.17
 [1.1.16]: https://github.com/kettle-dev/nomono/compare/v1.1.15...v1.1.16

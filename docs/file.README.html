@@ -169,7 +169,7 @@ Use <code>require "nomono/bundler"</code> from Gemfiles or modular Gemfiles; thi
     <tr>
       <td>Source</td>
       <td>
-<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=GitHub&amp;logoColor=green" alt="Source on GitHub.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.195-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
+<a href="https://gitlab.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&amp;logo=Gitlab&amp;logoColor=orange" alt="Source on GitLab.com"></a> <a href="https://codeberg.org/kettle-dev/nomono"><img src="https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&amp;logo=CodeBerg&amp;logoColor=blue" alt="Source on CodeBerg.org"></a> <a href="https://github.com/kettle-dev/nomono"><img src="https://img.shields.io/badge/GitHub-238636?style=for-the-badge&amp;logo=GitHub&amp;logoColor=green" alt="Source on GitHub.com"></a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.shields.io/badge/KLOC-0.206-FFDD67.svg?style=for-the-badge&amp;logo=YouTube&amp;logoColor=blue" alt="The best SHA: dQw4w9WgXcQ!"></a>
 </td>
     </tr>
     <tr>
@@ -379,6 +379,7 @@ not covered by the generated CI or Appraisal matrix.</p>
 <code>NOMONO_GEMS_VENDOR_GEM_DIR</code> (or legacy <code>VENDOR_GEM_DIR</code>) is the base path of the vendor directory used for gems listed in <code>NOMONO_GEMS_VENDORED_GEMS</code>. Defaults to <code>$workspace_root/vendor</code>. This is <strong>not</strong> an alternative form of the workspace root — it only affects vendored gems.</li>
   <li>
 <code>NOMONO_GEMS_PATH_ALIASES</code> (or global fallback <code>NOMONO_PATH_ALIASES</code>) is a comma-delimited list of <code>source=canonical</code> absolute path aliases. Each pair must resolve to the same real directory. Matching local gem paths are rewritten to the canonical spelling before Bundler receives them, preventing <code>Gemfile.lock</code> churn from equivalent paths such as <code>/var/home/...</code> and <code>/home/...</code>.</li>
+  <li>The <code>subdirs:</code> option maps gem names to relative paths within the selected workspace or vendor directory. Use it when a gem’s source is nested inside a repository; paths must be relative and cannot contain <code>..</code>.</li>
   <li>
 <code>NOMONO_GEMS_DEBUG</code> enables debug output from nomono.</li>
 </ul>
@@ -440,6 +441,18 @@ eval_nomono_gems(
   vendored_gems_env: &quot;VENDORED_GEMS&quot;,
   vendor_gem_dir_env: &quot;VENDOR_GEM_DIR&quot;,
   debug_env: &quot;KETTLE_DEV_DEBUG&quot;
+)
+</code></pre>
+
+<p>For a gem stored in a subdirectory of its repository, map its name to that<br>
+relative path. Other gems keep the default <code>&lt;root&gt;/&lt;gem-name&gt;</code> layout:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">eval_nomono_gems(
+  gems: %w[structuredmerge-core],
+  prefix: &quot;STRUCTUREDMERGE_CORE&quot;,
+  path_env: &quot;STRUCTUREDMERGE_CORE_DEV&quot;,
+  root: %w[src my structuredmerge structuredmerge],
+  subdirs: {&quot;structuredmerge-core&quot; =&gt; &quot;packages/ruby&quot;}
 )
 </code></pre>
 

@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.1.17...HEAD">Unreleased</a></h2>
+<h2 id="unreleased"><a href="https://github.com/kettle-dev/nomono/compare/v1.1.18...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -83,6 +83,29 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 <h3 id="fixed">Fixed</h3>
 
 <h3 id="security">Security</h3>
+
+<h2 id="1118---2026-11-03">
+<a href="https://github.com/kettle-dev/nomono/compare/v1.1.17...v1.1.18">1.1.18</a> - 2026-11-03</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/kettle-dev/nomono/releases/tag/v1.1.18">v1.1.18</a>
+</li>
+  <li>COVERAGE: 97.57% – 201/206 lines in 7 files</li>
+  <li>BRANCH COVERAGE: 85.54% – 71/83 branches in 7 files</li>
+  <li>27.78% documented</li>
+</ul>
+
+<h3 id="added-1">Added</h3>
+
+<ul>
+  <li>[#34] Support resolving gems from configured relative subdirectories within workspace or vendor roots.</li>
+</ul>
+
+<h3 id="security-1">Security</h3>
+
+<ul>
+  <li>Require Addressable 2.9.1 or later and Nokogiri 1.19.5 or later to avoid known vulnerabilities in older dependency releases.</li>
+</ul>
 
 <h2 id="1117---2026-10-28">
 <a href="https://github.com/kettle-dev/nomono/compare/v1.1.16...v1.1.17">1.1.17</a> - 2026-10-28</h2>
@@ -199,7 +222,7 @@ Please file a bug if you notice a violation of semantic versioning.</p>
   <li>[kc] bundler-plugin-scan: Skip eval_nomono_gems when Bundler evaluates the Gemfile through its plugin scan, whose DSL undefines gem and gemspec declarations; reading back the last dependency from that empty list crashed bundle update with NoMethodError.</li>
 </ul>
 
-<h3 id="security-1">Security</h3>
+<h3 id="security-2">Security</h3>
 
 <h2 id="1112---2026-10-19">
 <a href="https://github.com/kettle-dev/nomono/compare/v1.1.11...v1.1.12">1.1.12</a> - 2026-10-19</h2>
@@ -308,7 +331,7 @@ Please file a bug if you notice a violation of semantic versioning.</p>
   <li>25.00% documented</li>
 </ul>
 
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 
 <ul>
   <li>kettle-jem-template-20260913-001 - Templating now also surfaces a review<br>
@@ -429,7 +452,7 @@ matching Galtzo-hosted asset exists.</li>
   <li>25.00% documented</li>
 </ul>
 
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 
 <h3 id="fixed-6">Fixed</h3>
 
@@ -463,7 +486,7 @@ even when the gemspec is loaded from another working directory.</li>
   <li>25.00% documented</li>
 </ul>
 
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 
 <ul>
   <li>
@@ -518,7 +541,7 @@ installs are not reported as project lint debt.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 
 <ul>
   <li>Added opt-in path alias normalization so local sibling paths can be rewritten<br>
@@ -620,7 +643,7 @@ remains the explicit Gemfile integration hook.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 
 <ul>
   <li>Added support for JRuby 10.1 and TruffleRuby 34.0.</li>
@@ -706,7 +729,7 @@ GitHub organization.</p>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-6">Added</h3>
+<h3 id="added-7">Added</h3>
 
 <ul>
   <li>Added StructuredMerge git diff driver configuration and the incident response<br>
@@ -742,7 +765,7 @@ differences in <code>Hash#inspect</code> spacing.</li>
   <li>12.50% documented</li>
 </ul>
 
-<h3 id="added-7">Added</h3>
+<h3 id="added-8">Added</h3>
 
 <ul>
   <li>Improved documentation of ENV variables and overrides in README.md</li>
