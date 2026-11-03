@@ -32,6 +32,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Security
 
+- Require Addressable 2.9.1 or later and Nokogiri 1.19.5 or later to avoid known vulnerabilities in older dependency releases.
+
 ## [1.1.17] - 2026-10-28
 
 - TAG: [v1.1.17][1.1.17t]
