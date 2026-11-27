@@ -3,8 +3,8 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        25,
-        70
+        66,
+        103
       ]
     }
   ],
@@ -12,8 +12,8 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        57,
-        136
+        90,
+        169
       ]
     }
   ],
@@ -21,8 +21,8 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        26,
-        71
+        67,
+        104
       ]
     }
   ],
@@ -30,9 +30,9 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        58,
-        77,
-        137
+        91,
+        110,
+        170
       ]
     }
   ],
@@ -40,8 +40,8 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        32,
-        156
+        73,
+        189
       ]
     }
   ],
@@ -49,8 +49,8 @@
     {
       "file": "CHANGELOG.md",
       "lines": [
-        33,
-        157
+        74,
+        190
       ]
     }
   ],
@@ -175,6 +175,15 @@
       ]
     }
   ],
+  "out != \"\" { print > out }\n' \"$bundle\"": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        95,
+        124
+      ]
+    }
+  ],
   "path_env: \"RUBOCOP_LTS_DEV\",\nvendored_gems_env: \"VENDORED_GEMS\",": [
     {
       "file": "gemfiles/modular/style_local.gemfile",
@@ -210,6 +219,15 @@
       "lines": [
         131,
         140
+      ]
+    }
+  ],
+  "subject=\"$(openssl x509 -in \"$file\" -noout -subject 2>/dev/null || true)\"\nif [ -n \"$subject\" ] && matches \"$subject\"; then": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        103,
+        127
       ]
     }
   ],
